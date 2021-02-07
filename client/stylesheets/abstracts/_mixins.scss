@@ -1,0 +1,63 @@
+//
+// Mixins
+// --------------------------------------------------
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin appearance ($appearance) {
+	-webkit-appearance: $appearance;
+	   -moz-appearance: $appearance;
+	        appearance: $appearance;
+}
+
+@mixin full-width-image($img-uri, $background-top:"center", $background-left:"center"){
+  background: url($img-uri) no-repeat unquote($background-top) unquote($background-left);
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+@mixin box-shadow($top, $left, $blur, $color, $inset: false) {
+  @if $inset {
+    -webkit-box-shadow:inset $top $left $blur $color;
+       -moz-box-shadow:inset $top $left $blur $color;
+            box-shadow:inset $top $left $blur $color;
+  } @else {
+    -webkit-box-shadow: $top $left $blur $color;
+       -moz-box-shadow: $top $left $blur $color;
+            box-shadow: $top $left $blur $color;
+  }
+}
+
+@mixin vcenter(){
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@mixin text-shadow($x, $y, $blur, $color) {
+  text-shadow: $x $y $blur $color;
+}
+
+@mixin alpha-background-color($color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  background-color: $solid-color;
+  background-color: $color;
+}
+
+@mixin transition-duration($duration) {
+  -webkit-transition: $duration;
+     -moz-transition: $duration;
+      -ms-transition: $duration;
+       -o-transition: $duration;
+          transition: $duration;
+}

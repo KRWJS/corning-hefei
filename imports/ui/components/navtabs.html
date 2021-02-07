@@ -1,0 +1,30 @@
+<template name="navtabs">
+
+<div class="container no-margin-mobile">
+
+  <!-- Start nav tabs list -->
+  <ul class="nav nav-tabs nav-justified nav-tabs-breadcrumb" role="tablist">
+
+      <li role="presentation" class="{{isActiveRoute regex='^why'}}">
+
+          <a href="{{pathFor 'why.index'}}" title="Click to read employee stories" aria-controls="why" role="tab" class="text-right">{{_ 'navTabs.why'}}</a>
+
+      </li>
+
+      <li role="presentation" class="{{isActiveRoute regex='^citybook'}}">
+
+          <a href="{{pathFor 'citybook.index'}}" title="Click to view life in Hefei" aria-controls="living" role="tab" class="nav-tabs-breadcrumb__second-item">{{_ 'navTabs.living'}}</a>
+
+      </li>
+
+      <li role="presentation" class="{{isActiveRoute regex='^vacancies'}}">
+
+          <a href="{{pathFor 'vacancies.index'}}" title="Click to view our latest vacancies" aria-controls="vacancies" role="tab" class="text-left nav-tabs-breadcrumb__third-item">{{_ 'navTabs.vacancies'}}</a>
+
+      </li>
+
+  </ul><!-- //Nav tabs list -->
+
+</div>
+
+</template>

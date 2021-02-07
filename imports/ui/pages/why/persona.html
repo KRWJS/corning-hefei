@@ -1,0 +1,76 @@
+<template name="Why_persona">
+
+    <div class="container-fluid no-padding container-fluid--tab ">
+
+        <!-- Start tab panes -->
+        <div class="container tab-content spacer-margin-top persona container__content fade-in">
+
+          <div class="row hidden-xs">
+
+            <div class="col-md-12">
+
+              <ol class="breadcrumb">
+                <li><a href="/">{{{_ 'breadcrumb.home'}}}</a></li>
+                <li><a href="/why-corning">{{{_ 'breadcrumb.why'}}}</a></li>
+                <li class="active">{{{_ (profileText 'desc') }}}</li>
+              </ol>
+
+            </div>
+
+          </div>
+
+
+          <div role="tabpanel" class="tab-pane active" id="why-corning">
+
+            <div class="row">
+
+                <div class="col-md-1"></div>
+
+                <div class="col-md-10 persona__image">
+
+                    <img src="{{personaImage}}" class="img-responsive center-block"/>
+
+                </div>
+
+                <div class="col-md-1"></div>
+
+            </div>
+
+
+            <div class="row">
+
+                <div class="col-md-1"></div>
+
+                <div class="col-md-10 persona__slogan">
+
+                  <h1 class="italic">{{{_ (profileText 'slogan')}}}</h1>
+
+                </div>
+
+                <div class="col-md-1"></div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-1"></div>
+
+                <div class="col-md-10 persona__bio">
+
+                    <p>{{{_ (profileText 'bio')}}}</p>
+
+                    <p>{{{_ (profileText 'cta')}}}</p>
+
+                </div>
+
+                <div class="col-md-1"></div>
+
+            </div>
+
+          </div>
+
+        </div><!-- //Tab panes -->
+
+    </div>
+
+</template>

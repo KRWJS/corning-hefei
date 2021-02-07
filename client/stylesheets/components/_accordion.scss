@@ -1,0 +1,106 @@
+//
+// Accordion
+// --------------------------------------------------
+
+
+
+
+
+.js-panel-hefei{
+  @include box-shadow(0px, 0px, 4px, #E4E4E4, $inset: false);
+}
+
+.panel-group-hefei{
+  display: inline-block;
+  width: 100%;
+}
+
+.panel-group-hefei .panel-hefei{
+  border: 0;
+  border-radius: 0;
+  margin: 2em 0 -1em;
+  float: left;
+  width: 100%;
+}
+
+.panel-group .panel + .panel{
+  margin-top: 2em;
+}
+
+.panel-heading-hefei{
+  @include alpha-background-color(rgba($blue-base, 0.8), $blue-base);
+  @include transition-duration(0.3s);
+  background-image: url('./images/btn-gloss.png');
+  background-position: 2px 2px;
+  background-repeat: no-repeat;
+  border: 0;
+  color: $white-base;
+  border-radius: 0;
+  padding: 2.25em 3em 2.25em 1em;
+  position: relative;
+  &:after{
+    content: "\e080";
+    position: absolute;
+    font-family: $font-icon-base;
+    right: 7%;
+    top: 40%;
+  }
+  &:hover{
+    background-color: $blue-base;
+    background-image: url('./images/btn-gloss-hover.png');
+  }
+}
+
+.panel-title-hefei{
+  font-size: $font-size-panel;
+  text-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+  @media only screen and (max-width : 480px) {
+    font-size: 18px;
+  }
+}
+
+.js-panel-hefei--init{
+  background: $white-base;
+  background-image: none;
+  color: $blue-base;
+  &:hover{
+    background-color: $white-base;
+    background-image: none;
+  }
+  &:after{
+    content:"\e113";
+    position: absolute;
+    font-family: $font-icon-base;
+    right: 3.6%;
+    top: 40%;
+    color: $blue-base;
+    @media only screen and (max-width : 1199px) {
+      right: 4.1%;
+    }
+    @media only screen and (max-width : 991px) {
+      right: 3.5%;
+    }
+    @media only screen and (max-width : 754px) {
+      right: 4.5%;
+    }
+    @media only screen and (max-width : 480px) {
+      right: 5.8%;
+    }
+  }
+  & .panel-title-hefei{
+    text-shadow: none;
+  }
+}
+
+.panel-body.panel-body-hefei{
+  padding: 1em;
+  & img{
+    margin-bottom: 1em;
+  }
+}
+
+.container__full-width-mobile{
+  @media only screen and (max-width : 767px) {
+    width: 100%;
+  }
+}

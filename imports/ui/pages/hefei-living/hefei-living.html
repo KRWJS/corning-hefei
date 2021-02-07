@@ -1,0 +1,1200 @@
+<template name="living_page">
+
+  <!-- Start header container -->
+  <header class="container-fluid container__header hidden-xs container__header--slick">
+
+    <div class="container-fluid container-nav--hover container-nav--hover--living container-sticky no-padding">
+      <div class="container">
+        <!-- Start header row -->
+        <div class="row">
+
+            <div class="col-md-12 clearfix container__header-row no-padding">
+
+              <nav class="navbar">
+
+                <ul class="nav navbar-nav">
+                  <li>
+                    <!-- Start header logo link & image -->
+                    <a href="/" class="navbar-brand" title="Click to go home">
+                        <img src="/images/logo.svg" class="brand__logo" alt="Corning logo">
+                    </a><!-- //Header logo link & image -->
+
+                    <!-- Start header logo link & image -->
+                    <a href="/" class="navbar-brand--sticky" title="Click to go home">
+                        <img src="/images/logo--xs.svg" class="brand__logo" alt="Corning logo">
+                    </a><!-- //Header logo link & image -->
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{pathFor 'why.index'}}" title="Click to view why corning">{{_ 'navTabs.why'}}</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{pathFor 'citybook.index'}}" title="Click to view living in Hefei">{{_ 'navTabs.living'}}</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{pathFor 'vacancies.index'}}" title="Click to view vacancies">{{_ 'navTabs.vacancies'}}</a>
+                  </li>
+                </ul>
+
+                <!-- Start multi-site navigation -->
+                <ul class="list-inline text-right multi-site">
+                    <li>
+                        <a href="mailto:gcrecruit@corning.com?subject=Corning Hefei Recrutiment" class="contact-link" title="Click to contact us">{{_ 'navTabs.contact'}}</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Click to view English version" class="multi-site__link {{isActiveLang 'en'}} js-change-locale" data-lang="en">EN</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Click to view Chinese version" class="multi-site__link {{isActiveLang 'zh'}} js-change-locale" data-lang="zh">简</a>
+                    </li>
+                </ul><!-- //Multi-site navigation -->
+              </nav>
+            </div>
+        </div><!-- //Header row -->
+
+      </div>
+    </div>
+
+    <div class="slider slider-for">
+      <div class="slick-slide slick-slide--image slick-slide--transport" data-index="1"></div>
+      <div class="slick-slide slick-slide--image slick-slide--culture" data-index="2"></div>
+      <div class="slick-slide slick-slide--image slick-slide--dining" data-index="3"></div>
+      <div class="slick-slide slick-slide--image slick-slide--education" data-index="4"></div>
+      <div class="slick-slide slick-slide--image slick-slide--leisure" data-index="5"></div>
+      <div class="slick-slide slick-slide--image slick-slide--living" data-index="6"></div>
+      <div class="slick-slide slick-slide--image slick-slide--science" data-index="7"></div>
+    </div>
+
+    <div class="slider slider-nav hidden-sm">
+      <div class="slick-slide slick-slide--nav" data-index="0" data-label="transportation">
+        <p>{{_ 'slider.transportation'}}</p>
+      </div>
+      <div class="slick-slide slick-slide--nav" data-index="1" data-label="culture">
+        <p>{{_ 'slider.culture'}}</p>
+      </div>
+      <div class="slick-slide slick-slide--nav" data-index="2" data-label="dining">
+        <p>{{_ 'slider.dining'}}</p>
+      </div>
+      <div class="slick-slide slick-slide--nav" data-index="3" data-label="education">
+        <p>{{_ 'slider.education'}}</p>
+      </div>
+      <div class="slick-slide slick-slide--nav" data-index="4" data-label="leisure">
+        <p>{{_ 'slider.leisure'}}</p>
+      </div>
+      <div class="slick-slide slick-slide--nav" data-index="5" data-label="living">
+        <p>{{_ 'slider.living'}}</p>
+      </div>
+      <div class="slick-slide slick-slide--nav" data-index="6" data-label="sandt">
+        <p>{{_ 'slider.sandt'}}</p>
+      </div>
+    </div>
+
+  </header><!-- //Header container -->
+
+  <!-- Start mobile header -->
+  <header class="container container__header--xs visible-xs">
+
+    <div class="row row-xs--blue">
+
+      <div class="col-xs-6">
+        <a href="/" class="navbar-brand navbar-brand--xs" title="Click to go home">
+            <img src="/images/logo--xs.svg" class="brand__logo" alt="Corning logo">
+        </a><!-- //Header logo link & image -->
+      </div>
+
+      <div class="col-xs-6">
+        <!-- Start multi-site navigation -->
+        <ul class="list-inline list-inline--xs text-right multi-site">
+            <li>
+                <a href="#" title="Click to view English version" class="multi-site__link {{isActiveLang 'en'}} js-change-locale" data-lang="en">EN</a>
+            </li>
+            <li>
+                <a href="#" title="Click to view Chinese version" class="multi-site__link {{isActiveLang 'zh'}} js-change-locale" data-lang="zh">简</a>
+            </li>
+        </ul><!-- //Multi-site navigation -->
+      </div>
+
+    </div>
+
+    <div class="row row-xs--white">
+
+      <nav class="navbar--xs">
+
+      <ul class="list-inline list-inline--xs">
+        <li class="nav-item nav-item--xs">
+          <a href="{{pathFor 'why.index'}}" title="Click to view why corning">{{_ 'navTabs.why'}}</a>
+        </li>
+        <li class="nav-item nav-item--xs">
+          <a href="{{pathFor 'citybook.index'}}" title="Click to view living in Hefei">{{_ 'navTabs.living'}}</a>
+        </li>
+        <li class="nav-item nav-item--xs">
+          <a href="{{pathFor 'vacancies.index'}}" title="Click to view vacancies">{{_ 'navTabs.vacancies'}}</a>
+        </li>
+      </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <div class="slider slider-for visible-xs">
+    <div class="slick-slide slick-slide--image slick-slide--transport" data-index="0"></div>
+    <div class="slick-slide slick-slide--image slick-slide--culture" data-index="1"></div>
+    <div class="slick-slide slick-slide--image slick-slide--dining" data-index="2"></div>
+    <div class="slick-slide slick-slide--image slick-slide--education" data-index="3"></div>
+    <div class="slick-slide slick-slide--image slick-slide--leisure" data-index="4"></div>
+    <div class="slick-slide slick-slide--image slick-slide--living" data-index="5"></div>
+    <div class="slick-slide slick-slide--image slick-slide--science" data-index="6"></div>
+  </div>
+
+
+
+
+
+  <!-- Start transportation content -->
+  <div class="container slide-content slide-content-transportation" data-id="0">
+
+    <div class="hidden-xs">
+      <div class="row spacer-margin-slick">
+
+        <div class="col-md-12">
+          <h2>{{_ 'transportation.introOne'}}</h2>
+          <p>{{_ 'transportation.introTwo'}}</p>
+          <h2>{{_ 'transportation.panelOneTitle'}}</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <p>{{{_ 'transportation.panelOneDescription'}}}</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/images/citybook/transportation/airport-1.jpg" class="img-responsive center-block"/>
+
+          <img src="/images/citybook/transportation/airport-2.jpg" class="img-responsive center-block"/>
+        </div>
+
+      </div>
+
+      <div class="row spacer-margin-slick">
+
+        <div class="col-md-12">
+          <h2>{{_ 'transportation.panelTwoTitle'}}</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <p>{{{_ 'transportation.panelTwoDescription'}}}</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/images/citybook/transportation/plant-location-1.jpg" class="img-responsive center-block"/>
+        </div>
+
+      </div>
+
+      <div class="row spacer-margin-slick">
+
+        <div class="col-md-12">
+          <h2>{{_ 'transportation.panelThreeTitle'}}</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <p>{{{_ 'transportation.panelThreeDescription'}}}</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/images/citybook/transportation/railway-1.jpg" class="img-responsive center-block"/>
+
+          <img src="/images/citybook/transportation/railway-2.jpg" class="img-responsive center-block"/>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Start transportation accordion container (mobile) -->
+    <div class="container no-padding visible-xs">
+
+      <!-- Start accordion row -->
+      <div class="row">
+
+        <!-- Start accordion col -->
+        <div class="col-md-12">
+
+          <h2>{{_ 'transportation.introOne'}}</h2>
+          <p>{{_ 'transportation.introTwo'}}</p>
+
+          <!-- Start panel group -->
+          <div class="panel-group panel-group-hefei" id="accordionTransport" role="tablist" aria-multiselectable="true">
+
+              <!-- Start panel -->
+              <div class="panel panel-default panel-hefei js-panel-hefei">
+
+                <!-- Start panel link -->
+                <a role="button" data-toggle="collapse" data-parent="#accordionTransport" href="#collapseTransportOne" aria-expanded="true" aria-controls="collapseTransportOne">
+
+                  <!-- Start panel heading -->
+                  <div class="panel-heading panel-heading-hefei js-panel-heading-hefei" role="tab" id="headingTransportOne">
+                    <!-- Start panel title -->
+                    <h4 class="panel-title panel-title-hefei">
+                        {{_ 'transportation.panelOneTitle'}}
+                    </h4><!-- //Panel title -->
+
+                  </div><!-- //Panel heading -->
+
+                </a><!-- //Panel link -->
+
+                <!-- Start panel collapse -->
+                <div id="collapseTransportOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTransportOne">
+
+                  <!-- Start panel body -->
+                  <div class="panel-body panel-body-hefei">
+
+                    <p>{{{_ 'transportation.panelOneDescription'}}}</p>
+
+                    <img src="/images/citybook/transportation/airport-1.jpg" class="img-responsive center-block"/>
+
+                    <img src="/images/citybook/transportation/airport-2.jpg" class="img-responsive center-block"/>
+
+                  </div><!-- //Panel body -->
+
+                </div><!-- //Panel collapse -->
+
+              </div><!-- //Panel -->
+
+              <!-- Start panel -->
+              <div class="panel panel-default panel-hefei js-panel-hefei">
+
+                <!-- Start panel link -->
+                <a role="button" data-toggle="collapse" data-parent="#accordionTransport" href="#collapseTransportTwo" aria-expanded="true" aria-controls="collapseTransportTwo">
+
+                  <!-- Start panel heading -->
+                  <div class="panel-heading panel-heading-hefei js-panel-heading-hefei" role="tab" id="headingTransportTwo">
+
+                    <!-- Start panel title -->
+                    <h4 class="panel-title panel-title-hefei">
+                        {{_ 'transportation.panelTwoTitle'}}
+                    </h4><!-- //Panel title -->
+
+                  </div><!-- //Panel heading -->
+
+                </a><!-- //Panel link -->
+
+                <!-- Start panel collapse -->
+                <div id="collapseTransportTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTransportTwo">
+
+                  <!-- Start panel body -->
+                  <div class="panel-body panel-body-hefei">
+
+                    <p>{{{_ 'transportation.panelTwoDescription'}}}</p>
+
+                    <img src="/images/citybook/transportation/plant-location-1.jpg" class="img-responsive center-block"/>
+
+                  </div><!-- //Panel body -->
+
+                </div><!-- //Panel collapse -->
+
+              </div><!-- //Panel -->
+
+              <!-- Start panel -->
+              <div class="panel panel-default panel-hefei js-panel-hefei">
+
+                <!-- Start panel link -->
+                <a role="button" data-toggle="collapse" data-parent="#accordionTransport" href="#collapseTransportThree" aria-expanded="true" aria-controls="collapseTransportThree">
+
+                  <!-- Start panel heading -->
+                  <div class="panel-heading panel-heading-hefei js-panel-heading-hefei" role="tab" id="headingTransportThree">
+
+                    <!-- Start panel title -->
+                    <h4 class="panel-title panel-title-hefei">
+                        {{_ 'transportation.panelThreeTitle'}}
+                    </h4><!-- //Panel title -->
+
+                  </div><!-- //Panel heading -->
+
+                </a><!-- //Panel link -->
+
+                <!-- Start panel collapse -->
+                <div id="collapseTransportThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTransportThree">
+
+                  <!-- Start panel body -->
+                  <div class="panel-body panel-body-hefei">
+
+                    <p>{{{_ 'transportation.panelThreeDescription'}}}</p>
+
+                    <img src="/images/citybook/transportation/railway-1.jpg" class="img-responsive center-block"/>
+
+                    <img src="/images/citybook/transportation/railway-2.jpg" class="img-responsive center-block"/>
+
+                  </div><!-- //Panel body -->
+
+                </div><!-- //Panel collapse -->
+
+              </div><!-- //Panel -->
+
+          </div><!-- //Panel group -->
+
+        </div><!-- //Accordion col -->
+
+      </div><!-- //Accordion row -->
+
+    </div><!-- //Container -->
+
+  </div><!-- //Transportation content -->
+
+
+
+
+
+  <!-- Start culture content -->
+  <div class="container slide-content slide-content-culture" data-id="1">
+
+    <div class="hidden-xs">
+      <div class="row spacer-margin-slick">
+
+        <div class="col-md-12">
+          <h2>{{_ 'culture.panelOneTitle'}}</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <p>{{{_ 'culture.panelOneDescription'}}}</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/images/citybook/culture/heritage-culture-1.jpg" class="img-responsive center-block"/>
+
+          <img src="/images/citybook/culture/heritage-culture-2.jpg" class="img-responsive center-block"/>
+
+          <img src="/images/citybook/culture/heritage-culture-3.jpg" class="img-responsive center-block"/>
+        </div>
+
+      </div>
+
+      <div class="row spacer-margin-slick">
+
+        <div class="col-md-12">
+          <h2>{{_ 'culture.panelTwoTitle'}}</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <p>{{{_ 'culture.panelTwoDescription'}}}</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/images/citybook/culture/li-culture-1.jpg" class="img-responsive center-block"/>
+
+          <img src="/images/citybook/culture/li-culture-2.jpg" class="img-responsive center-block"/>
+
+          <img src="/images/citybook/culture/li-culture-3.jpg" class="img-responsive center-block"/>
+
+        </div>
+
+      </div>
+
+      <div class="row spacer-margin-slick">
+
+        <div class="col-md-12">
+          <h2>{{_ 'culture.panelThreeTitle'}}</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <p>{{{_ 'culture.panelThreeDescription'}}}</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/images/citybook/culture/kaifu-culture-1.jpg" class="img-responsive center-block"/>
+
+          <img src="/images/citybook/culture/kaifu-culture-2.jpg" class="img-responsive center-block"/>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Start culture accordion container (mobile) -->
+    <div class="container no-padding visible-xs">
+
+      <!-- Start accordion row -->
+      <div class="row">
+
+        <!-- Start accordion col -->
+        <div class="col-md-12">
+
+          <!-- Start panel group -->
+          <div class="panel-group panel-group-hefei" id="accordionCulture" role="tablist" aria-multiselectable="true">
+
+              <!-- Start panel -->
+              <div class="panel panel-default panel-hefei js-panel-hefei">
+
+                <!-- Start panel link -->
+                <a role="button" data-toggle="collapse" data-parent="#accordionCulture" href="#collapseCultureOne" aria-expanded="true" aria-controls="collapseCultureOne">
+
+                  <!-- Start panel heading -->
+                  <div class="panel-heading panel-heading-hefei js-panel-heading-hefei" role="tab" id="headingCultureOne">
+
+                    <!-- Start panel title -->
+                    <h4 class="panel-title panel-title-hefei">
+                        {{_ 'culture.panelOneTitle'}}
+                    </h4><!-- //Panel title -->
+
+                  </div><!-- //Panel heading -->
+
+                </a><!-- //Panel link -->
+
+                <!-- Start panel collapse -->
+                <div id="collapseCultureOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingCultureOne">
+
+                  <!-- Start panel body -->
+                  <div class="panel-body panel-body-hefei">
+
+                    <p>{{{_ 'culture.panelOneDescription'}}}</p>
+
+                    <img src="/images/citybook/culture/heritage-culture-1.jpg" class="img-responsive center-block"/>
+
+                    <img src="/images/citybook/culture/heritage-culture-2.jpg" class="img-responsive center-block"/>
+
+                    <img src="/images/citybook/culture/heritage-culture-3.jpg" class="img-responsive center-block"/>
+
+                  </div><!-- //Panel body -->
+
+                </div><!-- //Panel collapse -->
+
+              </div><!-- //Panel -->
+
+              <!-- Start panel -->
+              <div class="panel panel-default panel-hefei js-panel-hefei">
+
+                <!-- Start panel link -->
+                <a role="button" data-toggle="collapse" data-parent="#accordionCulture" href="#collapseCultureTwo" aria-expanded="true" aria-controls="collapseCultureTwo">
+
+                  <!-- Start panel heading -->
+                  <div class="panel-heading panel-heading-hefei js-panel-heading-hefei" role="tab" id="headingCultureTwo">
+
+                    <!-- Start panel title -->
+                    <h4 class="panel-title panel-title-hefei">
+                        {{_ 'culture.panelTwoTitle'}}
+                    </h4><!-- //Panel title -->
+
+                  </div><!-- //Panel heading -->
+
+                </a><!-- //Panel link -->
+
+                <!-- Start panel collapse -->
+                <div id="collapseCultureTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingCultureTwo">
+
+                  <!-- Start panel body -->
+                  <div class="panel-body panel-body-hefei">
+
+                    <p>{{{_ 'culture.panelTwoDescription'}}}</p>
+
+                    <img src="/images/citybook/culture/li-culture-1.jpg" class="img-responsive center-block"/>
+
+                    <img src="/images/citybook/culture/li-culture-2.jpg" class="img-responsive center-block"/>
+
+                    <img src="/images/citybook/culture/li-culture-3.jpg" class="img-responsive center-block"/>
+
+                  </div><!-- //Panel body -->
+
+                </div><!-- //Panel collapse -->
+
+              </div><!-- //Panel -->
+
+              <!-- Start panel -->
+              <div class="panel panel-default panel-hefei js-panel-hefei">
+
+                <!-- Start panel link -->
+                <a role="button" data-toggle="collapse" data-parent="#accordionCulture" href="#collapsecultureThree" aria-expanded="true" aria-controls="collapsecultureThree">
+
+                  <!-- Start panel heading -->
+                  <div class="panel-heading panel-heading-hefei js-panel-heading-hefei" role="tab" id="headingcultureThree">
+
+                    <!-- Start panel title -->
+                    <h4 class="panel-title panel-title-hefei">
+                        {{_ 'culture.panelThreeTitle'}}
+                    </h4><!-- //Panel title -->
+
+                  </div><!-- //Panel heading -->
+
+                </a><!-- //Panel link -->
+
+                <!-- Start panel collapse -->
+                <div id="collapsecultureThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingcultureThree">
+
+                  <!-- Start panel body -->
+                  <div class="panel-body panel-body-hefei">
+
+                    <p>{{{_ 'culture.panelThreeDescription'}}}</p>
+
+                    <img src="/images/citybook/culture/kaifu-culture-1.jpg" class="img-responsive center-block"/>
+
+                    <img src="/images/citybook/culture/kaifu-culture-2.jpg" class="img-responsive center-block"/>
+
+                  </div><!-- //Panel body -->
+
+                </div><!-- //Panel collapse -->
+
+              </div><!-- //Panel -->
+
+          </div><!-- //Panel group -->
+
+        </div><!-- //Accordion col -->
+
+      </div><!-- //Accordion row -->
+
+    </div><!-- //Container -->
+
+  </div><!-- //Culture content -->
+
+
+
+
+
+  <!-- Start dining content -->
+  <div class="container slide-content slide-content-dining" data-id="2">
+
+    <div class="hidden-xs">
+      <div class="row spacer-margin-slick">
+
+        <div class="col-md-12">
+          <h2>{{_ 'dining.panelOneTitle'}}</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <p>{{{_ 'dining.panelOneDescription'}}}</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/images/citybook/dining/dining-culture-3.jpg" class="img-responsive center-block"/>
+
+          <img src="/images/citybook/dining/dining-culture-1.jpg" class="img-responsive center-block"/>
+
+          <img src="/images/citybook/dining/dining-culture-2.jpg" class="img-responsive center-block"/>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Start dining accordion container (mobile) -->
+    <div class="container no-padding visible-xs">
+
+      <!-- Start accordion row -->
+      <div class="row">
+
+        <!-- Start accordion col -->
+        <div class="col-md-12">
+
+          <!-- Start panel group -->
+          <div class="panel-group panel-group-hefei" id="accordionDining" role="tablist" aria-multiselectable="true">
+
+              <!-- Start panel -->
+              <div class="panel panel-default panel-hefei js-panel-hefei">
+
+                <!-- Start panel link -->
+                <a role="button" data-toggle="collapse" data-parent="#accordionDining" href="#collapseDiningOne" aria-expanded="true" aria-controls="collapseDiningOne">
+
+                  <!-- Start panel heading -->
+                  <div class="panel-heading panel-heading-hefei js-panel-heading-hefei" role="tab" id="headingDiningOne">
+
+                    <!-- Start panel title -->
+                    <h4 class="panel-title panel-title-hefei">
+                        {{_ 'dining.panelOneTitle'}}
+                    </h4><!-- //Panel title -->
+
+                  </div><!-- //Panel heading -->
+
+                </a><!-- //Panel link -->
+
+                <!-- Start panel collapse -->
+                <div id="collapseDiningOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingDiningOne">
+
+                  <!-- Start panel body -->
+                  <div class="panel-body panel-body-hefei">
+
+                    <p>{{{_ 'dining.panelOneDescription'}}}</p>
+
+                    <img src="/images/citybook/dining/dining-culture-1.jpg" class="img-responsive center-block"/>
+
+                    <img src="/images/citybook/dining/dining-culture-2.jpg" class="img-responsive center-block"/>
+
+                    <img src="/images/citybook/dining/dining-culture-3.jpg" class="img-responsive center-block"/>
+
+                  </div><!-- //Panel body -->
+
+                </div><!-- //Panel collapse -->
+
+              </div><!-- //Panel -->
+
+          </div><!-- //Panel group -->
+
+        </div><!-- //Accordion col -->
+
+      </div><!-- //Accordion row -->
+
+    </div><!-- //Container -->
+
+  </div><!-- //Dining content -->
+
+
+
+
+
+  <!-- Start education content -->
+  <div class="container slide-content slide-content-education" data-id="3">
+
+    <div class="hidden-xs">
+
+      <div class="row spacer-margin-slick">
+
+        <div class="col-md-12">
+          <h2>{{_ 'education.panelOneTitle'}}</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <p>{{{_ 'education.panelOneDescription'}}}</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/images/citybook/education/ustc-culture-1.jpg" class="img-responsive center-block"/>
+
+          <img src="/images/citybook/education/ustc-culture-2.jpg" class="img-responsive center-block"/>
+        </div>
+
+      </div>
+
+      <div class="row spacer-margin-slick">
+
+        <div class="col-md-12">
+          <h2>{{_ 'education.panelTwoTitle'}}</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <p>{{{_ 'education.panelTwoDescription'}}}</p>
+        </div>
+
+        <div class="col-md-4"></div>
+
+      </div>
+
+    </div>
+
+    <!-- Start education accordion container (mobile) -->
+    <div class="container no-padding visible-xs">
+
+      <!-- Start accordion row -->
+      <div class="row">
+
+        <!-- Start accordion col -->
+        <div class="col-md-12">
+
+          <!-- Start panel group -->
+          <div class="panel-group panel-group-hefei" id="accordionEducation" role="tablist" aria-multiselectable="true">
+
+              <!-- Start panel -->
+              <div class="panel panel-default panel-hefei js-panel-hefei">
+
+                <!-- Start panel link -->
+                <a role="button" data-toggle="collapse" data-parent="#accordionEducation" href="#collapseEducationOne" aria-expanded="true" aria-controls="collapseEducationOne">
+
+                  <!-- Start panel heading -->
+                  <div class="panel-heading panel-heading-hefei js-panel-heading-hefei" role="tab" id="headingEducationOne">
+
+                    <!-- Start panel title -->
+                    <h4 class="panel-title panel-title-hefei">
+                        {{_ 'education.panelOneTitle'}}
+                    </h4><!-- //Panel title -->
+
+                  </div><!-- //Panel heading -->
+
+                </a><!-- //Panel link -->
+
+                <!-- Start panel collapse -->
+                <div id="collapseEducationOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEducationOne">
+
+                  <!-- Start panel body -->
+                  <div class="panel-body panel-body-hefei">
+
+                    <p>{{{_ 'education.panelOneDescription'}}}</p>
+
+                    <img src="/images/citybook/education/ustc-culture-1.jpg" class="img-responsive center-block"/>
+
+                    <img src="/images/citybook/education/ustc-culture-2.jpg" class="img-responsive center-block"/>
+
+                  </div><!-- //Panel body -->
+
+                </div><!-- //Panel collapse -->
+
+              </div><!-- //Panel -->
+
+              <!-- Start panel -->
+              <div class="panel panel-default panel-hefei js-panel-hefei">
+
+                <!-- Start panel link -->
+                <a role="button" data-toggle="collapse" data-parent="#accordionEducation" href="#collapseEducationTwo" aria-expanded="true" aria-controls="collapseEducationTwo">
+
+                  <!-- Start panel heading -->
+                  <div class="panel-heading panel-heading-hefei js-panel-heading-hefei" role="tab" id="headingEducationTwo">
+
+                    <!-- Start panel title -->
+                    <h4 class="panel-title panel-title-hefei">
+                        {{_ 'education.panelTwoTitle'}}
+                    </h4><!-- //Panel title -->
+
+                  </div><!-- //Panel heading -->
+
+                </a><!-- //Panel link -->
+
+                <!-- Start panel collapse -->
+                <div id="collapseEducationTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEducationTwo">
+
+                  <!-- Start panel body -->
+                  <div class="panel-body panel-body-hefei">
+
+                    <p>{{{_ 'education.panelTwoDescription'}}}</p>
+
+                  </div><!-- //Panel body -->
+
+                </div><!-- //Panel collapse -->
+
+              </div><!-- //Panel -->
+
+          </div><!-- //Panel group -->
+
+        </div><!-- //Accordion col -->
+
+      </div><!-- //Accordion row -->
+
+    </div><!-- //Container -->
+
+  </div><!-- //Education content -->
+
+
+
+
+
+  <!-- Start leisure content -->
+  <div class="container slide-content slide-content-leisure" data-id="4">
+
+    <div class="hidden-xs">
+
+      <div class="row spacer-margin-slick">
+
+        <div class="col-md-12">
+          <h2>{{_ 'leisure.panelOneTitle'}}</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <p>{{{_ 'leisure.panelOneDescription'}}}</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/images/citybook/leisure/1912-leisure-1.jpg" class="img-responsive center-block"/>
+
+          <img src="/images/citybook/leisure/1912-leisure-2.jpg" class="img-responsive center-block"/>
+
+          <img src="/images/citybook/leisure/1912-leisure-3.jpg" class="img-responsive center-block"/>
+        </div>
+
+      </div>
+
+      <div class="row spacer-margin-slick">
+
+        <div class="col-md-12">
+          <h2>{{_ 'leisure.panelTwoTitle'}}</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <p>{{{_ 'leisure.panelTwoDescription'}}}</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/images/citybook/leisure/wanda-leisure-1.jpg" class="img-responsive center-block"/>
+
+          <img src="/images/citybook/leisure/wanda-leisure-2.jpg" class="img-responsive center-block"/>
+
+          <img src="/images/citybook/leisure/wanda-leisure-3.jpg" class="img-responsive center-block"/>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Start leisure accordion container (mobile) -->
+    <div class="container no-padding visible-xs">
+
+      <!-- Start accordion row -->
+      <div class="row">
+
+        <!-- Start accordion col -->
+        <div class="col-md-12">
+
+          <!-- Start panel group -->
+          <div class="panel-group panel-group-hefei" id="accordionLeisure" role="tablist" aria-multiselectable="true">
+
+              <!-- Start panel -->
+              <div class="panel panel-default panel-hefei js-panel-hefei">
+
+                <!-- Start panel link -->
+                <a role="button" data-toggle="collapse" data-parent="#accordionLeisure" href="#collapseLeisureOne" aria-expanded="true" aria-controls="collapseLeisureOne">
+
+                  <!-- Start panel heading -->
+                  <div class="panel-heading panel-heading-hefei js-panel-heading-hefei" role="tab" id="headingLeisureOne">
+
+                    <!-- Start panel title -->
+                    <h4 class="panel-title panel-title-hefei">
+                        {{_ 'leisure.panelOneTitle'}}
+                    </h4><!-- //Panel title -->
+
+                  </div><!-- //Panel heading -->
+
+                </a><!-- //Panel link -->
+
+                <!-- Start panel collapse -->
+                <div id="collapseLeisureOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLeisureOne">
+
+                  <!-- Start panel body -->
+                  <div class="panel-body panel-body-hefei">
+
+                    <p>{{{_ 'leisure.panelOneDescription'}}}</p>
+
+                    <img src="/images/citybook/leisure/1912-leisure-1.jpg" class="img-responsive center-block"/>
+
+                    <img src="/images/citybook/leisure/1912-leisure-2.jpg" class="img-responsive center-block"/>
+
+                    <img src="/images/citybook/leisure/1912-leisure-3.jpg" class="img-responsive center-block"/>
+
+                  </div><!-- //Panel body -->
+
+                </div><!-- //Panel collapse -->
+
+              </div><!-- //Panel -->
+
+              <!-- Start panel -->
+              <div class="panel panel-default panel-hefei js-panel-hefei">
+
+                <!-- Start panel link -->
+                <a role="button" data-toggle="collapse" data-parent="#accordionLeisure" href="#collapseLeisureTwo" aria-expanded="true" aria-controls="collapseLeisureTwo">
+
+                  <!-- Start panel heading -->
+                  <div class="panel-heading panel-heading-hefei js-panel-heading-hefei" role="tab" id="headingLeisureTwo">
+
+                    <!-- Start panel title -->
+                    <h4 class="panel-title panel-title-hefei">
+                        {{_ 'leisure.panelTwoTitle'}}
+                    </h4><!-- //Panel title -->
+
+                  </div><!-- //Panel heading -->
+
+                </a><!-- //Panel link -->
+
+                <!-- Start panel collapse -->
+                <div id="collapseLeisureTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLeisureTwo">
+
+                  <!-- Start panel body -->
+                  <div class="panel-body panel-body-hefei">
+
+                    <p>{{{_ 'leisure.panelTwoDescription'}}}</p>
+
+                    <img src="/images/citybook/leisure/wanda-leisure-1.jpg" class="img-responsive center-block"/>
+
+                    <img src="/images/citybook/leisure/wanda-leisure-2.jpg" class="img-responsive center-block"/>
+
+                    <img src="/images/citybook/leisure/wanda-leisure-3.jpg" class="img-responsive center-block"/>
+
+                  </div><!-- //Panel body -->
+
+                </div><!-- //Panel collapse -->
+
+              </div><!-- //Panel -->
+
+          </div><!-- //Panel group -->
+
+        </div><!-- //Accordion col -->
+
+      </div><!-- //Accordion row -->
+
+    </div><!-- //Container -->
+
+  </div><!-- //Leisure content -->
+
+
+
+
+
+  <!-- Start living content -->
+  <div class="container slide-content slide-content-living" data-id="5">
+
+    <div class="hidden-xs">
+
+      <div class="row spacer-margin-slick">
+
+        <div class="col-md-12">
+          <h2>{{_ 'living.panelOneTitle'}}</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <p>{{{_ 'living.panelOneDescription'}}}</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/images/citybook/living/living-culture-1.jpg" class="img-responsive center-block"/>
+
+          <img src="/images/citybook/living/living-culture-2.jpg" class="img-responsive center-block"/>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Start living accordion container (mobile) -->
+    <div class="container no-padding visible-xs">
+
+      <!-- Start accordion row -->
+      <div class="row">
+
+        <!-- Start accordion col -->
+        <div class="col-md-12">
+
+          <!-- Start panel group -->
+          <div class="panel-group panel-group-hefei" id="accordionLiving" role="tablist" aria-multiselectable="true">
+
+              <!-- Start panel -->
+              <div class="panel panel-default panel-hefei js-panel-hefei">
+
+                <!-- Start panel link -->
+                <a role="button" data-toggle="collapse" data-parent="#accordionLiving" href="#collapseLivingOne" aria-expanded="true" aria-controls="collapseLivingOne">
+
+                  <!-- Start panel heading -->
+                  <div class="panel-heading panel-heading-hefei js-panel-heading-hefei" role="tab" id="headingLivingOne">
+
+                    <!-- Start panel title -->
+                    <h4 class="panel-title panel-title-hefei">
+                        {{_ 'living.panelOneTitle'}}
+                    </h4><!-- //Panel title -->
+
+                  </div><!-- //Panel heading -->
+
+                </a><!-- //Panel link -->
+
+                <!-- Start panel collapse -->
+                <div id="collapseLivingOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingLivingOne">
+
+                  <!-- Start panel body -->
+                  <div class="panel-body panel-body-hefei">
+
+                    <p>{{{_ 'living.panelOneDescription'}}}</p>
+
+                    <img src="/images/citybook/living/living-culture-1.jpg" class="img-responsive center-block"/>
+
+                    <img src="/images/citybook/living/living-culture-2.jpg" class="img-responsive center-block"/>
+
+                  </div><!-- //Panel body -->
+
+                </div><!-- //Panel collapse -->
+
+              </div><!-- //Panel -->
+
+          </div><!-- //Panel group -->
+
+        </div><!-- //Accordion col -->
+
+      </div><!-- //Accordion row -->
+
+    </div><!-- //Container -->
+
+  </div><!-- //Living content -->
+
+
+
+
+
+  <!-- Start science content -->
+  <div class="container slide-content slide-content-sandt" data-id="6">
+
+    <div class="hidden-xs">
+      <div class="row spacer-margin-slick">
+
+        <div class="col-md-12">
+          <h2>{{_ 'sandt.panelOneTitle'}}</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <p>{{{_ 'sandt.panelOneDescription'}}}</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/images/citybook/science/science-culture-1.jpg" class="img-responsive center-block"/>
+
+          <img src="/images/citybook/science/science-culture-2.jpg" class="img-responsive center-block"/>
+        </div>
+
+      </div>
+
+      <div class="row spacer-margin-slick">
+
+        <div class="col-md-12">
+          <h2>{{_ 'sandt.panelTwoTitle'}}</h2>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-8">
+          <p>{{{_ 'sandt.panelTwoDescription'}}}</p>
+        </div>
+
+        <div class="col-md-4">
+          <img src="/images/citybook/science/science-culture-3.jpg" class="img-responsive center-block"/>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Start science accordion container (mobile) -->
+    <div class="container no-padding visible-xs">
+
+      <!-- Start accordion row -->
+      <div class="row">
+
+        <!-- Start accordion col -->
+        <div class="col-md-12">
+
+          <!-- Start panel group -->
+          <div class="panel-group panel-group-hefei" id="accordionScience" role="tablist" aria-multiselectable="true">
+
+              <!-- Start panel -->
+              <div class="panel panel-default panel-hefei js-panel-hefei">
+
+                <!-- Start panel link -->
+                <a role="button" data-toggle="collapse" data-parent="#accordionScience" href="#collapseScienceOne" aria-expanded="true" aria-controls="collapseScienceOne">
+
+                  <!-- Start panel heading -->
+                  <div class="panel-heading panel-heading-hefei js-panel-heading-hefei" role="tab" id="headingScienceOne">
+
+                    <!-- Start panel title -->
+                    <h4 class="panel-title panel-title-hefei">
+                        {{_ 'sandt.panelOneTitle'}}
+                    </h4><!-- //Panel title -->
+
+                  </div><!-- //Panel heading -->
+
+                </a><!-- //Panel link -->
+
+                <!-- Start panel collapse -->
+                <div id="collapseScienceOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingScienceOne">
+
+                  <!-- Start panel body -->
+                  <div class="panel-body panel-body-hefei">
+
+                    <p>{{{_ 'sandt.panelOneDescription'}}}</p>
+
+                    <img src="/images/citybook/science/science-culture-1.jpg" class="img-responsive center-block"/>
+
+                    <img src="/images/citybook/science/science-culture-2.jpg" class="img-responsive center-block"/>
+
+                  </div><!-- //Panel body -->
+
+                </div><!-- //Panel collapse -->
+
+              </div><!-- //Panel -->
+
+              <!-- Start panel -->
+              <div class="panel panel-default panel-hefei js-panel-hefei">
+
+                <!-- Start panel link -->
+                <a role="button" data-toggle="collapse" data-parent="#accordionScience" href="#collapseScienceTwo" aria-expanded="true" aria-controls="collapseScienceTwo">
+
+                  <!-- Start panel heading -->
+                  <div class="panel-heading panel-heading-hefei js-panel-heading-hefei" role="tab" id="headingScienceTwo">
+
+                    <!-- Start panel title -->
+                    <h4 class="panel-title panel-title-hefei">
+                        {{_ 'sandt.panelTwoTitle'}}
+                    </h4><!-- //Panel title -->
+
+                  </div><!-- //Panel heading -->
+
+                </a><!-- //Panel link -->
+
+                <!-- Start panel collapse -->
+                <div id="collapseScienceTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingScienceTwo">
+
+                  <!-- Start panel body -->
+                  <div class="panel-body panel-body-hefei">
+
+                    <p>{{{_ 'sandt.panelTwoDescription'}}}</p>
+
+                    <img src="/images/citybook/science/science-culture-3.jpg" class="img-responsive center-block"/>
+
+                  </div><!-- //Panel body -->
+
+                </div><!-- //Panel collapse -->
+
+              </div><!-- //Panel -->
+
+          </div><!-- //Panel group -->
+
+        </div><!-- //Accordion col -->
+
+      </div><!-- //Accordion row -->
+
+    </div><!-- //Container -->
+
+  </div><!-- //Science content -->
+
+
+
+
+
+</template>

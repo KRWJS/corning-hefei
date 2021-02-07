@@ -1,0 +1,40 @@
+//
+// Pagination
+// --------------------------------------------------
+
+
+
+
+.container-pagination{
+  @include alpha-background-color(rgba($white-base, 0.8), $white-base);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+.pager{
+  width: 100%;
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 1.5em 0;
+}
+
+.pager li>a{
+  background: none;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  font-weight: bold;
+  font-size: 20px;
+  color: $blue-base;
+  &:hover{
+    background: none;
+    color: $grey-dark;
+  }
+  &:focus{
+    background: none;
+  }
+}

@@ -1,0 +1,77 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+
+
+
+/**
+  Typography
+
+  These are the font families and font sizes
+  They should include repsonsive states **/
+
+
+$font-family-base:        'Lato';
+$font-icon-base:          'Glyphicons Halflings';
+$font-family-chinese:      Arial,'Hiragino Sans GB',宋体,Sans-Serif;
+
+$font-size-base:          24px;
+$font-size-base-mobile:   16px;
+
+$font-size-btn-vacacy:    20px;
+$font-size-btn-span:      14px;
+$font-size-lead:          36px;
+
+$font-size-panel:         26px;
+
+$font-size-h1:            40px;    // ~40px
+$font-size-h1-mobile:     26px;    // ~26px
+
+$font-size-h2:            36px;
+$font-size-h2-mobile:     22px;
+
+$font-size-h3:            26px;
+$font-size-h3-mobile:     16px;
+
+$font-size-h4:            20px;
+$font-size-h4-mobile:     16px;
+
+$font-size-h5:            18px;
+$font-size-h5-mobile:     18px;
+
+$font-size-h6:            14px;
+$font-size-h6-mobile:     14px;
+
+
+
+$font-size-small:         18px;
+$font-size-medium:        ceil(($font-size-base * 1.37));   // ~22px
+
+$font-size-btn-large:            26px;
+$font-size-btn-large-mobile:     22px;     // ~22px
+$font-size-btn-hefei-large:      26px;
+
+$line-height-base:        36px;
+
+
+
+
+
+/**
+  Colours
+
+  These are all the brand colours being used within the website **/
+
+
+$black-base:              #000000;
+$white-base:              #FFFFFF;
+
+$grey-base:               #A2A2A2;
+$grey-dark:               #717070;
+$grey-darker:             #4A4A4A;
+
+$blue-base:               #005293;
+$blue-light:              #1B5694;
+$blue-lighter:            #DFF6FD;

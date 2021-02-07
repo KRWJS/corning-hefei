@@ -1,0 +1,61 @@
+<template name="filter">
+
+<!-- Start vacancy filter container -->
+<div class="container-fluid vacancy-filter">
+
+    <!-- Start vacancy filter row -->
+    <div class="row">
+
+        <!-- Start empty col -->
+        <div class="col-md-2"></div><!-- //Empty col -->
+
+        <!-- Start col-md-8 -->
+        <div class="col-md-8 text-center no-padding add-padding-tablet">
+
+            <!-- Start vacancy filter inline form -->
+            <form class="form-inline vacancy-filter__form-inline">
+
+                <!-- Start vacancy filter form group left -->
+                <div class="form-group vacancy-filter__form-group--left">
+
+                    <label class="filter-label">{{_ 'filter.label'}}</label>
+
+                    <!-- Start vacancy filter form control (select) -->
+                    <select class="form-control form-control--vacancy-filter js-category-filter">
+
+                        <option value="" selected>{{_ 'fieldSelect.selected'}}</option>
+                        {{#each category in categories}}
+                            <option value="{{category}}">{{_ (translationKey 'vacancyCategories' category)}}</option>
+                        {{/each}}
+
+                    </select><!-- //Vacancy filter form control (select)-->
+
+                </div><!-- //Vacancy filter form group left -->
+
+                <!-- Start vacancy filter form group right -->
+                <div class="form-group vacancy-filter__form-group--right">
+
+                    <!-- Start vacancy filter form control (select) -->
+                    <select class="form-control form-control--vacancy-filter js-experience-filter">
+
+                        <option value="" selected>{{_ 'experienceSelect.selected'}}</option>
+                        {{#each exp in experiences}}
+                            <option value="{{exp}}">{{_ (translationKey 'experiences' exp)}}</option>
+                        {{/each}}
+
+                    </select><!-- //Vacancy filter form control (select) -->
+
+                </div><!-- //Vacancy filter form group right -->
+
+            </form><!-- //Vacancy filter inline form -->
+
+        </div><!-- //Col-md-8 -->
+
+        <!-- Start empty col -->
+        <div class="col-md-2"></div><!-- //Empty col -->
+
+    </div><!-- //Vacancy filter row -->
+
+</div><!-- //Vacancy filter container -->
+
+</template>

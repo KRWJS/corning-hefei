@@ -1,0 +1,118 @@
+<template name="Header_glass">
+    <!-- Start header container -->
+    <header class="container-fluid container__header container__header--glass hidden-xs no-padding">
+
+      <div class="container-fluid container-nav--hover no-padding container-sticky">
+        <div class="container">
+          <!-- Start header row -->
+          <div class="row">
+
+              <div class="col-md-12 clearfix container__header-row no-padding">
+
+                <nav class="navbar">
+
+                  <ul class="nav navbar-nav">
+                    <li>
+                      <!-- Start header logo link & image -->
+                      <a href="/" class="navbar-brand" title="Click to go home">
+                          <img src="/images/logo.svg" class="brand__logo" alt="Corning logo">
+                      </a><!-- //Header logo link & image -->
+                      <!-- Start header logo link & image -->
+                      <a href="/" class="navbar-brand--sticky" title="Click to go home">
+                          <img src="/images/logo--xs.svg" class="brand__logo" alt="Corning logo">
+                      </a><!-- //Header logo link & image -->
+                    </li>
+                    <li class="nav-item">
+                      <a href="{{pathFor 'why.index'}}" title="Click to view why corning">{{_ 'navTabs.why'}}</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="{{pathFor 'citybook.index'}}" title="Click to view living in Hefei">{{_ 'navTabs.living'}}</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="{{pathFor 'vacancies.index'}}" title="Click to view vacancies">{{_ 'navTabs.vacancies'}}</a>
+                    </li>
+                  </ul>
+
+                  <!-- Start multi-site navigation -->
+                  <ul class="list-inline pull-right multi-site">
+                      <li>
+                          <a href="mailto:gcrecruit@corning.com?subject=Corning Hefei Recrutiment" class="contact-link" title="Click to contact us">{{_ 'navTabs.contact'}}</a>
+                      </li>
+                      <li>
+                          <a href="#" title="Click to view English version" class="multi-site__link {{isActiveLang 'en'}} js-change-locale" data-lang="en">EN</a>
+                      </li>
+                      <li>
+                          <a href="#" title="Click to view Chinese version" class="multi-site__link {{isActiveLang 'zh'}} js-change-locale" data-lang="zh">简</a>
+                      </li>
+                  </ul><!-- //Multi-site navigation -->
+                </nav>
+              </div>
+          </div><!-- //Header row -->
+
+        </div>
+      </div>
+
+        <div class="container">
+
+            <div class="row">
+
+              <div class="col-md-12 text-center white-text">
+
+                <h1>{{_ title}}</h1>
+                <p>{{{_ 'bannerHeading.sub'}}}</p>
+
+              </div>
+
+            </div>
+
+        </div>
+
+    </header><!-- //Header container -->
+
+    <header class="container container__header--xs container__header--why visible-xs">
+
+      <div class="row row-xs--blue">
+
+        <div class="col-xs-6">
+          <a href="/" class="navbar-brand navbar-brand--xs" title="Click to go home">
+              <img src="/images/logo--xs.svg" class="brand__logo" alt="Corning logo">
+          </a><!-- //Header logo link & image -->
+        </div>
+
+        <div class="col-xs-6 text-right">
+          <!-- Start multi-site navigation -->
+          <ul class="list-inline list-inline--xs pull-right multi-site">
+              <li>
+                  <a href="#" title="Click to view English version" class="multi-site__link {{isActiveLang 'en'}} js-change-locale" data-lang="en">EN</a>
+              </li>
+              <li>
+                  <a href="#" title="Click to view Chinese version" class="multi-site__link {{isActiveLang 'zh'}} js-change-locale" data-lang="zh">简</a>
+              </li>
+          </ul><!-- //Multi-site navigation -->
+        </div>
+
+      </div>
+
+      <div class="row row-xs--white">
+
+        <nav class="navbar--xs">
+
+          <ul class="list-inline list-inline--xs">
+            <li class="nav-item nav-item--xs">
+              <a href="{{pathFor 'why.index'}}" title="Click to view why corning">{{_ 'navTabs.why'}}</a>
+            </li>
+            <li class="nav-item nav-item--xs">
+              <a href="{{pathFor 'citybook.index'}}" title="Click to view living in Hefei">{{_ 'navTabs.living'}}</a>
+            </li>
+            <li class="nav-item nav-item--xs">
+              <a href="{{pathFor 'vacancies.index'}}" title="Click to view vacancies">{{_ 'navTabs.vacancies'}}</a>
+            </li>
+          </ul>
+
+        </nav>
+
+      </div>
+
+    </header>
+
+</template>

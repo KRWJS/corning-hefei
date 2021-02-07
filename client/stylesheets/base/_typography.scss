@@ -1,0 +1,191 @@
+//
+// Typography
+// --------------------------------------------------
+
+
+
+
+
+/** Fonts **/
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(/fonts/Lato-Light.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(/fonts/Lato-Regular.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(/fonts/Lato-Bold.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(/fonts/Lato-Black.woff) format('woff');
+}
+
+
+
+
+
+/**
+  Headings
+
+  These are the styles for the page headings
+  They should include responsive states for font sizes **/
+
+h1,
+h3,
+h4{
+  font-weight: bold;
+}
+
+h2,
+h5,
+h6{
+  font-weight: normal;
+}
+
+h1{
+  font-size: $font-size-h1;
+  color: $white-base;
+  margin: 1em 0;
+  &.italic{
+    margin: 0;
+    line-height: 53px;
+    @media only screen and (max-width : 480px) {
+      line-height: 32px;
+    }
+  }
+  @media only screen and (max-width : 480px) {
+    font-size: $font-size-h1-mobile;
+  }
+}
+
+h2{
+  font-size: $font-size-h2;
+  @media only screen and (max-width : 480px) {
+    font-size: $font-size-h2-mobile;
+  }
+}
+
+h3{
+  font-size: $font-size-h3;
+  @media only screen and (max-width : 480px) {
+    font-size: $font-size-h3-mobile;
+  }
+}
+
+h4{
+  font-size: $font-size-h4;
+  @media only screen and (max-width : 480px) {
+    font-size: $font-size-h4-mobile;
+  }
+}
+
+h5{
+  font-size: $font-size-h5;
+  @media only screen and (max-width : 480px) {
+    font-size: $font-size-h5-mobile;
+  }
+}
+
+h6{
+  font-size: $font-size-h6;
+  @media only screen and (max-width : 480px) {
+    font-size: $font-size-h6-mobile;
+  }
+}
+
+
+
+
+
+/**
+  Body Text
+
+  These are the styles for the main body text
+  They should include responsive states for font sizes **/
+
+
+p{
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $grey-darker;
+  margin: 0 0 1.5em;
+  @media only screen and (max-width : 480px) {
+    font-size: $font-size-base-mobile;
+    line-height: 22px;
+  }
+}
+
+.lead__intro-text{
+  @include text-shadow(0, 2px, 8px, $black-base);
+  color: $white-base;
+  font-size: $font-size-lead;
+  margin: 0 0 0.2em;
+  line-height: 50px;
+  @media only screen and (max-width : 768px) {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+  & strong{
+    font-weight: 700;
+    @media only screen and (max-width : 768px) {
+      font-weight: 900;
+    }
+  }
+}
+
+.lead__intro-text:first-child{
+  margin-top: 1.5em;
+}
+
+.lead__intro-text--questions_2_1{
+  margin: 1.5em 0 0;
+  font-size: 30px;
+  line-height: 40px;
+  @media only screen and (max-width : 768px) {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+
+.lead__intro-text--lg{
+  @media only screen and (max-width : 768px) {
+    font-size: 26px;
+    font-weight: 900;
+    margin: 1em 0 0.5em;
+  }
+}
+
+.italic{
+  font-style: italic;
+}
+
+.white-text{
+  & p{
+    color: $white-base;
+  }
+}
+
+.container-vacancy-intro{
+  & p{
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+span.n-letter-spacing{
+  font-family: $font-family-chinese;
+}

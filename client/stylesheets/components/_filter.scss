@@ -1,0 +1,80 @@
+//
+// Vacancy Filter
+// --------------------------------------------------
+
+.form-control{
+  &:focus{
+    @include box-shadow(0, 0, 0, 0, $inset: false);
+    border: 1px solid $black-base;
+  }
+}
+
+.vacancy-filter{
+  background: #F1F1F1;
+  padding: 0.8em 0;
+}
+
+.vacancy-filter__form-inline .form-control{
+  width: 320px;
+  @media only screen and (max-width : 1199px) {
+    width: 303px;
+  }
+  @media only screen and (max-width : 767px) {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+.form-group{
+  position: relative;
+}
+
+.vacancy-filter__form-group--left,
+.vacancy-filter__form-group--right{
+  &:before{
+    content: "\e114";
+    font-family: $font-icon-base;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+.vacancy-filter__form-group--left{
+  &:before{
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    @media only screen and (max-width : 768px) {
+      top: 50%;
+      right: 8%;
+      transform: translateY(50%);
+    }
+  }
+}
+
+.vacancy-filter__form-group--right{
+  &:before{
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    @media only screen and (max-width : 768px) {
+      top: 50%;
+      right: 8%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+.vacancy-filter__form-group--left label{
+  @media only screen and (max-width : 767px) {
+    text-align: left;
+    display: block;
+    position: relative;
+    margin: 1em 5%;
+  }
+}
+
+.label.filter-label{
+  margin-bottom: 0;
+  vertical-align: middle;
+}

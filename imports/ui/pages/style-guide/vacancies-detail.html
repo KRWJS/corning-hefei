@@ -1,0 +1,104 @@
+<template name="App_Vacancies_detail">
+
+  <div class="container-fluid no-padding add-padding-tablet container-fluid--tab">
+
+    <!-- Start tab panes -->
+    <div class="container tab-content spacer-margin container__content u-pb-6">
+
+        <div role="tabpanel" class="tab-pane active" id="vacancies">
+
+          <!-- Start vacancies row 1 -->
+          <div class="row">
+
+            <div class="col-md-9 col-vacancies-detail">
+
+              <ol class="breadcrumb breadcrumb-vacancies-detail hidden-xs">
+                <li><a href="{{pathFor 'style.vacancies'}}">Vacancies</a></li>
+                <li class="active">Sr. Research Engineer</li>
+              </ol>
+
+              <h1>Sr. Research Engineer</h1>
+
+              <dl class="dl-horizontal dl-horizontal__vacancies-detail">
+
+                <dt>Location</dt>
+                  <dd>Shanghai</dd>
+
+                <dt>Business unit</dt>
+                  <dd>RHQ - SH</dd>
+
+                <dt>Job family</dt>
+                  <dd>Research &amp; Development</dd>
+
+                <dt>Job ID</dt>
+                  <dd>179630</dd>
+
+                <dt class="hidden-xs">Responsibility</dt>
+                  <dd class="spacer-margin-top-mobile">
+                    <strong>Day to Day Responsibilities</strong>
+                    <ul class="vacancies-detail__responsibility">
+                      <li>MS or higher degree in Emission control engineering, engine engineering, or mechanical engineering</li>
+                      <li>3 years of hands-on experience on vehicle testinginautomotive industry (prefer with multi-national company), familiar with test cells design, installation and operation and other regular vehicle testing tools</li>
+
+                      <li class="vacancies-detail__responsibility--list-title">
+                        <strong>Required Skills</strong>
+                      </li>
+
+                      <li>Hands-on experience in auto engine and emissions control system, emission test and measurement system</li>
+                      <li>Proficient in data processing software and programming(for instance, Matlab)</li>
+                      <li>Fluent in written and oral English</li>
+                      <li>Technical savvy and pay attention to details</li>
+                      <li>Ability to learn new technologies in broad range</li>
+
+                      <li class="vacancies-detail__responsibility--list-title">
+                        <strong>Desired Skills</strong>
+                      </li>
+
+                      <li>Working knowledge of electronic engine control and calibration tools, basic instrumentation (CAN bus J1939 and OBD), and vehicle and test cell hardware</li>
+                      <li>Understand industry trend and China emission control roadmaps</li>
+                    </ul>
+                  </dd>
+
+              </dl>
+
+            </div>
+
+            <div class="col-md-3 no-padding-mobile no-padding-tablet">
+
+              <a href="#" role="button" class="btn btn-hefei btn-hefei--apply">{{_ 'button.apply'}}</a>
+
+              <div class="social-media-invite">
+                <h4><strong>{{_ 'inviteFriends.title'}}</strong></h4>
+                <h4>{{_ 'inviteFriends.subTitle'}}</h4>
+                <ul class="list-inline list-inline__social-media-invite">
+                  <li>
+
+                    <button id="wechat-invite" type="button" class="btn btn-invite--wechat" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+                    sagittis lacus vel augue laoreet rutrum faucibus.">
+                      <i class="fa fa-weixin" aria-hidden="true"></i>
+                    </button>
+
+                  </li>
+                  <li>
+                    <a href="#" onclick="return shareToWeibo('http://www.corning.com/', '{{_'social.share-message'}}')"><i class="fa fa-weibo" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="return shareToLinkedin('http://www.corning.com/')"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="mailto:?subject=Discover%20an%20Exciting%20World%20Behind%20The%20Glass%20at%20Corning&amp;body=http://www.corning.com/"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+          </div><!-- //Vacancies row 1 -->
+
+        </div>
+
+    </div><!-- //Tab panes -->
+
+  </div>
+
+</template>

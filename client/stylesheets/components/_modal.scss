@@ -1,0 +1,62 @@
+.modal-backdrop.in{
+  background: $white-base;
+  opacity: 0.8;
+}
+
+.modal-content{
+  @include box-shadow(0px, 0px, 10px, #9b9b9b, $inset: false);
+  border-radius: 0;
+  border: 0;
+}
+
+.modal-header{
+  padding: 2em 15px 0;
+  border: 0;
+  & h5{
+    font-weight: bold;
+  }
+  & p{
+    font-size: 16px;
+  }
+}
+
+.modal-header .close{
+  opacity: 1;
+  color: #707070;
+  font-size: 3em;
+  margin-top: -22px;
+}
+
+.modal-body{
+  & p{
+    font-size: 16px;
+  }
+}
+
+.modal-title{
+  margin-bottom: 1em;
+  font-size: 25px;
+}
+
+.display-inline{
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 2em;
+}
+
+input.input--copy{
+  border: 1px solid #c1c1c1;
+  border-right: 0;
+  padding: 1em;
+  width: 85%;
+  float: left;
+}
+
+button.btn--copy{
+  width: 15%;
+  height: 50px;
+  background: transparent;
+  border: 1px solid #979797;
+  float: left;
+  color: #727272;
+}

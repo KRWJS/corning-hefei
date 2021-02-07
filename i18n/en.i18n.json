@@ -1,0 +1,499 @@
+{
+
+  "q1": {
+    "intro_1": "Hi! We are Corning and you’re about to discover an exciting world <strong>behind the glass</strong>.",
+    "intro_2": "Before we start, have you ever heard of us?",
+
+    "yes": "Yes",
+    "no": "No"
+  },
+
+  "q2_1": {
+    "q1": "That’s great! So you already know that we are one of the most innovative companies in the world. We’re even ranked in the US Fortune 500. We produce a wide range of materials including glass substrates used in LCD televisions, monitors, notebook computers, and portable electronic devices. Actually, there’s a pretty good chance that the glass for the screen that you’re touching right now is made by us. How cool is that? But there’s more. Shall we continue?",
+
+    "phone": "smartphone that you’re touching right now",
+    "tablet": "tablet that you’re touching right now",
+    "desktop": "computer screen that you’re looking at",
+
+    "yes": "Yes"
+  },
+
+  "q2_2": {
+    "q1": "Not to worry. Let us fill you in. Corning is one of the most innovative companies in the world. We’re even ranked in the US Fortune 500. We produce a wide range of materials including glass substrates used in LCD televisions, monitors, notebook computers, and portable electronic devices. Actually, there’s a pretty good chance that the glass for the screen that you’re touching right now is made by us. How cool is that?  But there’s more. Shall we continue?",
+
+    "phone": "smartphone that you’re touching right now",
+    "tablet": "tablet that you’re touching right now",
+    "desktop": "computer screen that you’re looking at",
+
+    "yes": "Yes"
+  },
+
+  "q3": {
+    "q1": "We are currently building a new plant to produce Corning's largest glass substrates for display panel makers. It is so exciting, and it is happening in Hefei, China. Have you ever been to this amazing city in Anhui?",
+    "q2": "Have you ever been to this amazing city in Anhui?",
+
+    "yes": "Yes",
+    "no": "No"
+  },
+
+  "q4_1": {
+    "q1": "That’s great! So were you born in Hefei?",
+
+    "yes": "Yes",
+    "no": "No"
+  },
+
+  "q4_1_1": {
+    "q1": "Fantastic! So do you live there now?",
+
+    "yes": "Yes",
+    "no": "No"
+  },
+
+  "q4_1_1_1": {
+    "q1": "So you’ll agree that Hefei is a great city and will understand why we chose to build our newest plant there. And this means that we may have a very interesting career opportunity for you.",
+    "q2": "Want to know more?",
+
+    "yes": "Come closer"
+  },
+
+  "q4_1_1_2": {
+    "q1": "So you’ll agree that Hefei is a great city and will understand why we chose to build our newest plant there. And this means that we may have a very interesting career opportunity for you.",
+    "q2": "Want to know more?",
+
+    "yes": "Come closer"
+  },
+
+  "q4_1_2": {
+    "q1": "The main thing is you’ve been to Hefei and seen what a great city it is. We can’t agree more and that’s why we chose to build our newest plant there. And this means that we may have a very interesting career opportunity for you.",
+    "q2": "Want to know more?",
+
+    "yes": "Come closer"
+  },
+
+  "q4_2": {
+    "q1": "Oh, you’ve never been? But we’re sure you’ll want to once you find out what a great city Hefei is. That’s why we chose to build our newest plant there. And this means we may have a very interesting career opportunity for you.",
+    "q2": "Want to know more?",
+
+    "yes": "Come closer"
+  },
+
+  "q5": {
+    "q1": "There is an exciting world <strong>behind the glass</strong>.",
+    "q2": "To get you on the right path, we need to ask you a few questions.",
+    "q3": "Shall we continue?",
+
+    "yes": "Yes"
+  },
+
+  "q6": {
+    "q1": "How many years have you worked?",
+
+    "graduate": "I’m still a graduate",
+    "junior": "1-4 years’ experience",
+    "senior": "Over 4 years’ experience"
+  },
+
+  "q7": {
+    "q1_graduate": "What is your field of expertise?",
+    "q1_experienced": "What is your field of expertise?",
+
+    "finance": "Finance",
+    "admin": "HR/Admin/Security",
+    "engineering": "Engineering",
+    "it": "Information Technology",
+    "manufacturing": "Manufacturing & Operations",
+    "scm": "Supply Chain"
+  },
+
+  "personas": {
+    "1": {
+      "slogan": "One of the world’s greatest technical innovations is happening in Hefei. Be part of it.",
+      "name": "My name is Eric.",
+      "desc": "Worked at a local company in Hefei",
+      "bio": "Born, raised and educated in Hefei, I was an engineer at a local company in the industrial sector for 4 years before joining Corning. Why did I decide to join Corning? I was looking for a new job in the city with better growth opportunities, more job security and a better working environment. There was an increasing number of multinational companies opening new facilities in Hefei. With my experience, I wanted a job that gave me the chance to learn about innovative technologies, plus on top of that, I didn’t want to relocate to another city as my children’s education and medical services are taken care of in Hefei.",
+      "cta": "I’ve found some vacancies that could suit you as well and you may be interested in. Be part of one of the world’s greatest technical innovations that’s happening in Hefei. <a href='/vacancies' class='vacancies-link js-vacancies-link' title='Click to view our latest vacancies'>Check out the vacancies</a> tailored for you, and <a href='/citybook' class='vacancies-link js-vacancies-link'>click here</a> to find out what makes Hefei such a great city!"
+    },
+
+    "2": {
+      "slogan": "Now is your chance to go back to Hefei and be part of one of the world’s fastest growing international tech companies.",
+      "name": "My name is Lucas.",
+      "desc": "Studied outside of hometown and wants to return",
+      "bio": "I was born and raised in Hefei but I studied at a university in a different city. In the same city, I graduated and became an engineer and worked for over 5 years before coming back to Hefei to join Corning. Due to the increasing costs of living and difficulties to settle down as a non-local, these challenges impacted my life in finding suitable housing and schooling for my children. These factors had slowly decreased my satisfaction at work. Furthermore, whenever I visited Hefei to see my family and friends, I noticed the city changing and developing with more top-notch facilities and new working opportunities. I was also told about competitive growth opportunities with lower costs of living back home. It was the obvious choice for me to come back to Hefei. And at Corning, I have the chance to start my own family and enjoy a better quality of life.",
+      "cta": "I’ve found some vacancies that could suit you as well and you may be interested in.Now is your chance to be part of one of the world’s fastest growing international tech companies back in Hefei. <a href='/vacancies' class='vacancies-link js-vacancies-link' title='Click to view our latest vacancies'>Check out the vacancies</a> tailored for you, and <a href='/citybook' class='vacancies-link js-vacancies-link'>click here</a> to find out what makes Hefei such a great city!"
+    },
+
+    "3": {
+      "slogan": "This is your chance to capitalise on your top-tier knowledge and experience.",
+      "name": "My name is Livia.",
+      "desc": "Studied in Shanghai and moved to Hefei",
+      "bio": "Originally from a second-tier city, I spent my university and first career life in Shanghai. However, after over 5 years, I realised that it was time to look for another exciting challenge at this stage of my career. Once I heard about Corning in Hefei, I really wanted to join. Even though it is in a second-tier city, I was instantly attracted to the diverse opportunities and career growth potential. What’s more, they’re a multinational company where I can add more value with my education and the experience I have gained over the years. Although I love the diversity and energy of cities such as Shanghai, I want my family to have a better quality of life where everything is also more affordable. And that’s why I decided to join and work at Corning in Hefei.",
+      "cta": "I’ve found some vacancies that could suit you as well and you may be interested in. This is your chance to capitalise on your top-tier knowledge and experience. <a href='/vacancies' class='vacancies-link js-vacancies-link' title='Click to view our latest vacancies'>Check out the vacancies</a> tailored for you, and <a href='/citybook' class='vacancies-link js-vacancies-link'>click here</a> to find out what makes Hefei such a great city!"
+    },
+
+    "4": {
+      "slogan": "No need to move because one of the world’s greatest technical innovations is happening in Hefei.",
+      "name": "My name is Julia.",
+      "desc": "Graduated in Hefei and doesn’t want to leave",
+      "bio": "Born and raised in Hefei, I graduated at one of the many universities in Hefei and am currently living with my parents. When I was a student, I wanted to move to and work in Shanghai, Beijing, Shenzhen or Guangzhou after I graduated. But as it got closer and closer to my graduation, I realised that there are more job opportunities and room for growth in Hefei. And that’s why I decided to stay and get a job here at Corning. They were looking for talent with higher skills and education. We were the right fit for each other and I’m very happy.",
+      "cta": "I’ve found some vacancies that suit you and you may be interested in. Stay where you are, because one of the world’s greatest technical innovations is happening in Hefei. <a href='/vacancies' class='vacancies-link js-vacancies-link' title='Click to view our latest vacancies'>Check out the vacancies</a> tailored for you, and <a href='/citybook' class='vacancies-link js-vacancies-link'>click here</a> to find out what makes Hefei such a great city!"
+    },
+
+    "5": {
+      "slogan": "Stay in Hefei to start your career path with the world’s greatest technical innovations.",
+      "name": "My name is Paul.",
+      "desc": "Came to Hefei to study and decided to stay",
+      "bio": "I studied in Beijing and had planned to work there for the job opportunities and dynamic lifestyle. However, I reconsidered and thought about going back to my hometown in Hefei where more and more multinational companies had started establishing themselves, providing even more opportunities for graduates such as myself. The environment had developed for better all-round living too. This means that my life in Hefei at Corning, I have everything I need and prospects to keep moving up the career ladder. Plus, more importantly, as a single child being brought up by my parents, it is now my time to take care of them. As I continue on my career path, I am slowly planning for my future. I would like to buy property and a car for a better quality of life. These two are almost unaffordable in cities such as Shanghai, Beijing, Shenzhen or Guangzhou.",
+      "cta": "I’ve found some vacancies that could suit you as well and you may be interested in. One of the world’s greatest technical innovations is happening in your hometown. <a href='/vacancies' class='vacancies-link js-vacancies-link' title='Click to view our latest vacancies'>Check out the vacancies</a> tailored for you, and <a href='/citybook' class='vacancies-link js-vacancies-link'>click here</a> to find out what makes Hefei such a great city!"
+    },
+
+    "6": {
+      "slogan": "Did you know that one of the world’s greatest technical innovations is happening in your hometown?",
+      "name": "My name is Stanley.",
+      "desc": "Left Beijing to have a better life in Hefei",
+      "bio": "I moved to Hefei in 2011 to study an engineering course at one of its prominent universities. I enjoyed my university life in Hefei and made many friends here. Also, my hometown is not too far from Hefei so I could visit my family during the long weekends and public holidays. My goal was to start my career at a company that is an industry leader after I graduated. Like many other graduates, working in cities such as Shanghai, Beijing, Shenzhen or Guangzhou was one of my plans. However, I heard from seniors and professors that there are increasingly more opportunities and support in Hefei for graduates that studied in Hefei through affiliation programmes and traineeship opportunities. And with Corning, being a one of the most innovative and fastest growing companies on the globe, they just stood out as the obvious choice for me to join. They made me want to start my career path in Hefei where I am familiar with the city and the people. And even though I wasn’t born or brought up in Hefei, I feel right at home here.",
+      "cta": "I’ve found some vacancies that could suit you as well and you may be interested in. Stay in Hefei to start your career path with the world’s greatest technical innovations. <a href='/vacancies' class='vacancies-link js-vacancies-link' title='Click to view our latest vacancies'>Check out the vacancies</a> tailored for you, and <a href='/citybook' class='vacancies-link js-vacancies-link'>click here</a> to find out what makes Hefei such a great city!"
+    }
+  },
+
+  "transportation": {
+    "introOne": "Corning’s innovation is happening in Hefei.",
+    "introTwo": "There are many reasons to live in Hefei. Look around to discover them.",
+    "title": "Transportation",
+
+    "panelOneTitle": "Xinqiao Airport",
+    "panelOneDescription": "
+    <p><strong>Zero distance with the world</strong></p>
+    <p>As a key transportation junction in Eastern China, the construction of the class 4E airport is divided into three phases, with the first phase already completed. The total area of ​​the terminal is 108,500 square metres, and there are more than 620 flights weekly, allowing you to travel to any country in the world via nonstop or transfer flights, making the world more accessible.</p>
+    <p><strong>Eagle spreading its wings</strong></p>
+    <p>Hefei, located South of the Yangtze River, bordering with Chaohu Lake and known for its beautiful and elegant environment, gave airport designers true inspiration. Looking down at the terminal, you can see an eagle spreading its wings, symbolizing the soaring life standard of this lake city and the conveniences in travel offered by the airport.</p>
+    <p>Xinqiao Airport is committed to excellence in all aspects of its services. To provide passengers with more convenient travel, the Xinqiao Airport offers 23 City Terminals located throughout Anhui Province, simple and comfortable design, convenient airport bus networks, and clear guide instructions wherever you go. With the rapid development of Hefei, the airport will become even more international. What’s more, the expansion and improvement of the airport will bring Hefei and the world ever closer together!</p>",
+
+    "panelTwoTitle": "Corning New Plant Location",
+    "panelTwoDescription": "
+    <p><strong>Xinzhan District</strong></p>
+    <p>Corning’s new plant is currently under construction in Hefei Xinzhan High-tech Industrial Development Zone. As the country's first comprehensive urban development pilot area, the Xinzhan District is proud to be part of the advanced industry. Especially in display devices, panels and other industries, the Xinzhan District has shown outstanding performances. The China Electronics News recently reported Xinzhan District’s high-generation LCD panel shipments are expected to lead the market worldwide.</p>
+    <p><strong>Convenient Transportation</strong></p>
+    <p>Transportation is very convenient in the Xinzhan District, which is an important industrial area. You will arrive at your destination in very little time from Xinqiao Airport or Hefei Railway South Station. By car, there are several options such as the express highway circling the city, the elevated road spreading over the city, and the normal city roads. Public transportation by bus is widely available, which will allow you to go directly to Corning’s New Plant. The subway is still under construction, giving you even more options when completed.</p>
+    <p><strong>Liveable District</strong></p>
+    <p>As a development area with high potential, the housing prices in Xinzhan District are currently very competitive to other Hefei districts. This makes it easier to purchase a house near Corning. Meanwhile, the tastefully remodelled streets, two ecological parks, and the industrial firms settling down in the district, have all improved the living environment. In addition, the development of modern agriculture, the inheritance of historical culture, and the construction of schools for higher education have turned the Xinzhang District into a bright and attractive area.</p>",
+
+    "panelThreeTitle": "South Railway Station Of Hefei",
+    "panelThreeDescription": "
+    <p><strong>Impressions of the South Railway Station</strong></p>
+    <p>When the high-speed trains enter South Railway Station, you might change your perception of the city right away. Step out of the platform and stand in the station arrival hall, you will be amazed by this magnificent building. Hefei South Railway Station is a Top 4 high-speed rail train station in Eastern China, a national comprehensive transportation hub, and is also one of the major transportation hubs in Asia, which has turned Hefei into one of the Top 10 national transportation hubs.</p>
+    <p><strong>Convenient Transportation</strong></p>
+    <p>When you arrive at South Railway Station, you can choose from a variety of transportation to go to any corner of the city, including Corning’s new plant. Unlike other cities, Hefei South Railway Station is not far from the city centre. Buses, taxis, and the upcoming subway make transportation to the city centre even more convenient.</p>
+    <p><strong>2-hour City Circle</strong></p>
+    <p>Hefei is a traffic hub in the centre of China with a number of intersecting railway lines. These intersections form a 2-hour city circle, which allows Hefei to link with other important transportation cities, such as Nanjing, Shanghai, Wuhan, Changsha, and Zhengzhou. If you want to go to the surrounding cities to relax with your family or friends, or go back to your hometown to visit relatives, or go on business trips to other cities, Hefei South Railway Station is your most comfortable travel experience.</p>"
+  },
+
+  "leisure": {
+    "title": "Leisure",
+
+    "panelOneTitle": "1912 Leisure Street",
+    "panelOneDescription": "
+    <p><strong>Happy City</strong></p>
+    <p>Hefei has been recognized as one of the top 10 happiest cities in China for a number of years. In addition, Hefei is moving towards being the most liveable city. When you walk through the 1912 Leisure Street Block, you can truly feel the happiness as you taste a variety of national cuisines and enjoy an abundance of art exhibitions.</p>
+    <p><strong>Leisure and Freedom</strong></p>
+    <p>Either spending your afternoon in a coffee shop, tasting delicious food for dinner, or unwinding while sitting on a roadside bench, Hefei 1912 Leisure Street has everything you need to enjoy your perfect leisure day.</p>
+    <p><strong>Beautiful View</strong></p>
+    <p>The 1912 Leisure Street is located in Hefei Jingguan Avenue on Huangshan Road. At the east of Dashu Mountain, north of the Governmental New District of Hefei and surrounded by the Tahiti residential area, you can experience different views at every step of your trip along this refreshing street.</p>",
+
+    "panelTwoTitle": "Wanda Tourism Park",
+    "panelTwoDescription": "
+    <p><strong>Great Lake, Great City, Great Park</strong></p>
+    <p>Hefei is the only provincial capital with proximity to such a sizable lake in China. Chaohu, one of the five largest freshwater lakes in China, is located in the southeast of Hefei. The lake and rich natural landscapes give diversity to the Binghu area, making Binghu New District a beautiful and modern city. Also located in Binghu New District is the Wanda Tourism Park, adding a new flavour to the scenery.</p>
+    <p><strong>Hui style theme park</strong></p>
+    <p>Would you like to spend some precious time with your friends and family? Wanda Tourism Park is a great option. The only Hui style theme park in the world, it offers a variety of entertainment and sports activities, facilitates team building, tourism and cultural activities in the integrated park, giving you, your family and friends the perfect day out.</p>
+    <p><strong>For all ages to enjoy</strong></p>
+    <p>Do screams from roller coasters scare you? Don’t worry. There are plenty of amusement facilities for people of all ages. You can experience parent-child activities, try the thrilling roller coaster with loved ones, or watch the Feishui Battle show with your family. Wanda Tourism Park is the park where you can experience it all.</p>
+    "
+
+  },
+
+  "living": {
+    "title": "Living",
+
+    "panelOneTitle": "Living",
+    "panelOneDescription": "
+    <p><strong>Comfortable Home</strong></p>
+    <p>Stop worrying about your monthly mortgage payment or having to cut your daily spending. In Hefei, where real estate prices are 1/4th of Beijing, Shanghai, Guangzhou and Shenzhen, you can own a piece of the world with your loved ones.</p>
+    <p><strong>As You Wish</strong></p>
+    <p>Whether you prefer to enjoy the convenience of modern life in a skyscraper apartment; be closer to nature in villas surrounded by plants and trees; or live a true city life right in the pulsing city centre, Hefei has it all.</p>
+    <p><strong>Extensive City Facilities</strong></p>
+    <p>When you live in Hefei, you will experience extensive city facilities and enjoy good living conditions. Municipal planning efforts include completing and perfecting all residential areas. Hefei will become increasingly international and modern.</p>"
+  },
+
+  "education": {
+    "title": "Education",
+
+    "panelOneTitle": "USTC",
+    "panelOneDescription": "
+     <p><strong>Outstanding Universities</strong></p>
+     <p>Among the top universities in China, USTC continues to dazzle with achievements. USTC is known for its published academic and research papers with leading positions in the SCI statistics.</p>
+     <p><strong>Honoured Youth Class</strong></p>
+     <p>Winner of the Nobel Laureate in Physics, Professor Tsung-Dao Lee from USTC, initiated the innovative Youth Class, the first of its kind in the history of education in China. USTC Youth Class cultivated many outstanding scientists as well as business and technology talents. </p>
+     <p><strong>Scientific and Technological strength</strong></p>
+     <p>USTC Hefei is one of the four biggest science cities in China. It has a large number of research institutions, including the Chinese Academy of Sciences, the Science Island and various national science laboratories.</p>
+    ",
+
+    "panelTwoTitle": "Basic Education",
+    "panelTwoDescription": "
+     <p><strong>International Start</strong></p>
+     <p>Hefei has several international primary and secondary schools, such as the Canadian International School or Hefei World Foreign Language School. Your children can enjoy an international and multicultural start, experience international schooling standards and environment. </p>
+     <p><strong>Public Schools</strong></p>
+     <p>Hefei Normal School, LiuAn Road Primary School, South Gate Primary School and other public primary schools, all have excellent teaching facilities, teachers and adopt a pragmatic teaching method. As for secondary schools, you can choose from Shouchun secondary school, Hefei No.42 Middle School, Hefei 168 Middle School, Hefei No.45 Middle School, and more spread across Hefei, eliminating your concerns about moving to a specific school district.</p>
+     <p><strong>Advanced Facilities</strong></p>
+     <p>Basic education institutions in Hefei are all equipped with modern classrooms, science laboratories, outdoor playgrounds, indoor stadiums,  dance classes, lecture halls, gyms and other advanced facilities. In addition, many schools also have own school buses.</p>
+    "
+
+  },
+
+  "dining": {
+    "title": "Dining",
+
+    "panelOneTitle": "Dining",
+    "panelOneDescription": "
+     <p><strong>No. 1 of the eight major cuisines in China</strong></p>
+     <p>Anhui cuisine is one of the eight major cuisines that originated in Huizhou during the Southern Song Dynasty. Its unique geographical and cultural environment provides unique flavors. During the Ming and Qing Dynasties, Anhui cuisine became the No.1 of the eight major cuisines.</p>
+     <p><strong>Freshness</strong></p>
+     <p>Anhui cuisine is typically prepared with local ingredients that make it so exceptionally fresh and delicious. It also utilises a special cooking method. Because Anhui has a mild climate with moderate rainfall, it cultivates rich, diverse and healthy foods ingredients. With such a long history, the Anhui cuisine knows many legendary tales. The ‘Li Hong Zhang’s hodgepodge’, ‘Hu pot’, and ‘Political mountain bamboo’, are classic examples of such legends. Do you know the stories behind these tales?</p>
+     <p><strong>Food & Beverages</strong></p>
+     <p>The Anhui cuisine comes from sophisticated cultures and offers great taste to the locals. But as a modern developing city, Hefei has more to offer in its food culture. You can find street food from all over China as well as feasts from Japan, South Korea, Europe and the US. You can also enjoy a variety of new creative fusion dishes.</p>
+    "
+
+  },
+
+  "sandt": {
+    "title": "Science & Technology",
+
+    "panelOneTitle": "Island of Science & Technology",
+    "panelOneDescription": "
+      <p><strong>R&D Centre</strong></p>
+      <p>The Island of Science & Technology is situated in a beautiful island located in the northwest of Hefei, connected by a steel bridge. When you drive through this green island, take a deep breath of fresh air as you admire the large, peaceful lake that surrounds you. Many R&D centres of Chinese Academy of Sciences are located here too.</p>
+      <p><strong>Advanced Technologies</strong></p>
+      <p>On the island, you will see a variety of advanced technologies that have been adopted by companies throughout China. You’ll be surprised to learn that many of them were pioneered here. For instance, the first HT7 superconducting device, the first Tokamak experimental device – an important nuclear fusion research base, etc. To date, there have been more than 1,800 scientists working on the island.</p>
+      <p><strong>Future Power</strong></p>
+      <p>The Island of Science and Technology is a perfect match for Hefei. The advantage of being the 4th city of technology education keeps the island developing in a stable way. And the island gives Hefei more and more power in technology, making it shine like a superstar.</p>
+    ",
+
+    "panelTwoTitle": "Institute of Advanced Technology, USTC",
+    "panelTwoDescription": "
+      <p><strong>4th City of Technology Education</strong></p>
+      <p>The R&D centre of the Institute of Advanced Technology is located in the Hefei High-tech Industrial Development Zone. Built in 1990, it is now the biggest High-tech Industrial Development Zone in Anhui Province. The High-tech Industrial Development Zone is now centred on 4 clusters of technology education including Digital Information Technology, Optical Mechanics, Biotechnology & Bio-pharma, and Advanced Materials. It is one of the most important factors for Hefei to be ranked 4th in cities of Technology Education.</p>
+      <p><strong>Driving Innovation</strong></p>
+      <p>The Institute of Advanced Technology has 3,000-5,000 postgraduate students specialising in different technological fields such as Microelectronics, New Energy, Advanced Materials and more. The R&D centre has built good partnerships with other R&D centres, renowned international companies and universities, aiming to drive innovation and transformations in technologies.</p>
+      <p><strong>Technology Carrier</strong></p>
+      <p>The power of technology is astonishing. From the first particle explosion, to the rapid development of today’s technology: from the ancient hydraulic windmills, to superconductors of the future. Technology is the motivation of human civilisation, it changes people’s lives, and with the Institute of Advanced Technology, it is an important factor for developing technology in Hefei and adding increasing value to Hefei’s technology education.</p>
+    "
+
+  },
+
+  "culture": {
+    "title": "Culture",
+
+    "panelOneTitle": "Hefei Intangible Cultural Heritage Park",
+    "panelOneDescription": "
+     <p><strong>Intangible Cultural Heritage Garden</strong></p>
+     <p>Curious about architectures from the Ming and Qing dynasties? Want to know more about China’s cultural heritage? Interested in Fengyang Opera or traditional Dragon Dancing? Experience these and many more activities in the Hefei Intangible Cultural Heritage Park. When you drive towards Hefei Intangible Cultural Heritage Park, you will see distinguishing pillars with Beijing opera faces welcoming visitors from all over the world.</p>
+     <p><strong>Mountains and River</strong></p>
+     <p>The Intangible Cultural Heritage Park is situated at Wolong Mountain Natural Ecology Spot in Hefei, surrounded by mountains and river. Thousands of plants grow on the mountains and every year, there are over 3 million little egrets residing there. The mountains and river create a unique landscape reminding you of classical Chinese landscape paintings.</p>
+     <p><strong>Abundant Heritage</strong></p>
+     <p>The park doesn’t just have an attractive landscape environment but also plenty of ancient heritages and temples you can visit. There are also 50 architectures from the Ming and Qing dynasties, including Dragon Kiln, 4 famous bricks cravings, and Wolong Sanhe Tower – all of which embodies the attractiveness of Hefei’s Intangible Cultural Heritage Park. If you want to go deeper into China’s heritage and traditional culture, this is the place to go.</p>
+    ",
+
+    "panelTwoTitle": "Li Hongzhang's Former Residence",
+    "panelTwoDescription": "
+      <p><strong>Through the history</strong></p>
+      <p>A city built for the modern life provides us with pleasure and comfort in living, but it is history that gives richness to Hefei. When you walk along the Huaihe Road and visit the legendary former residence of Li Hongzhang, you will go back in time and see the late Qing dynasty with your own eyes.</p>
+      <p><strong>Late Qing Dynasty Li Hongzhang’s residence</strong></p>
+      <p>Walk along Huaihe Road and you’ll know you’re at Li Hongzhang’s residence when you stand in front of a majestic building in the style of Ming, Qing and Hui dynasties. Whether you are in the front hall admiring the lifework of Li Hongzhang; taking in the beauty of the wooden sculpture in the middle hall, strolling through the elegantly tiled study room, or exploring the mysterious Zouma Building, this residence is sure to take you back in time to relive the dynamics of the late Qing dynasty.</p>
+      <p><strong>Birthplace of Talent</strong></p>
+      <p>As the old saying goes, “a place derives reflected glory from an illustrious son”. That must be the reason why Hefei is a place filled with many talents throughout its history. Li Hongzhang, who controlled the political situation in the late Qing Dynasty, was born in Hefei. Other talents born here include Bao Zheng – the symbol of justice, Zhou Yu of the Three Kingdoms, Fan Zeng of the Chu-Han Contention, General Sun Liren of the anti-Japanese period and Nobel Prize winner Mr. Yang Zhenning.</p>
+    ",
+
+    "panelThreeTitle": "Kaifu Temple",
+    "panelThreeDescription": "
+      <p><strong>Ancient Temple</strong></p>
+      <p>Similar to other Chinese temples, Kaifu Temple is located in the mountains. Opposite the beautiful and tall Dashu Mountain, and about 9 miles to the east and west are Fucha and Jiming mountains. When you are in front of Kaifu temple’s magnificent architecture, the elegant figure of Buddha, exquisite carving skills, and strong religious atmosphere will probably make you feel compassion for Buddhism to bring inner peace.</p>
+      <p><strong>Best Temple in Anhui</strong></p>
+      <p>Kaifu Temple is probably the best temple among all the others. It is the representative and centre of Buddhist temples in Anhui province, and also a place where people gather to pray. Shanmen Hall is open to everyone and includes a strong power warrior inside. There is also a pair of heavenly deity stone sculptures in the Daxiong Hall, protecting the temple.</p>
+      <p><strong>A place for your heart</strong></p>
+      <p>The Kaifu Temple is a top tourist attraction for visitors based on its location and size. It is also the most famous place for Buddhists and has a beautiful garden view with stone stairs and pavilions.</p>
+    "
+
+  },
+
+
+
+
+
+  "navTabs": {
+    "vacancies": "Vacancies",
+    "living": "Living in Hefei",
+    "why": "Why Corning?",
+    "contact": "Contact us"
+  },
+
+
+
+
+
+  "footer": {
+    "copyright": "© Corning Incorporated All Rights Reserved. Images used are from a 3D rendering of the new Hefei plant. It reflects the style and quality of the plant in Hefei which is currently being built."
+  },
+
+
+
+
+
+  "vacancyCategories": {
+    "finance": "Finance",
+    "admin": "HR/Admin",
+    "engineering": "Engineering",
+    "it": "Information Technology",
+    "manufacturing": "Manufacturing & Operations",
+    "scm": "Supply Chain"
+  },
+
+
+
+
+
+  "vacancyIntro": {
+    "p1": "As a world-leading supplier of glass substrates, Corning Display Technologies consistently develops new-generation sizes and reduced glass thicknesses to meet the emerging product needs of the TFT-LCD industry.",
+    "p2": "The Hefei plant will produce our largest glass substrates, using Corning’s fusion-draw process, to enable the manufacturing of TFT-LCD panels for large-size televisions. This demonstrates our commitment to supporting the continued growth of China’s TFT-LCD industry and allows us to unlock new opportunities as display technology continues to evolve."
+  },
+
+
+
+
+
+  "experiences": {
+    "graduate": "Graduate",
+    "1-4": "1-4 years",
+    ">4": ">4 years"
+  },
+
+
+
+
+
+  "experienceLevel": {
+    "graduate": "Graduate",
+    "1-4": "1-4 years experience",
+    ">4": ">4 years experience"
+  },
+
+
+
+
+
+  "filter": {
+    "label": "Filter"
+  },
+
+
+
+
+
+  "fieldSelect": {
+    "selected": "All Fields of expertise"
+  },
+
+
+
+
+
+  "experienceSelect": {
+    "selected": "All Experience"
+  },
+
+
+
+
+
+  "pagination": {
+    "back": "Back"
+  },
+
+
+
+
+
+  "button": {
+    "apply": "Apply",
+    "weChat": "Open WeChat"
+  },
+
+
+
+
+
+  "inviteFriends": {
+    "title": "Invite Your Friends",
+    "subTitle": "Tell them about this job."
+  },
+
+
+
+
+
+  "bannerHeading": {
+    "why": "Why Corning?",
+    "sub": "Corning’s innovation is happening in Hefei",
+    "vacancies": "Vacancies"
+  },
+
+
+
+
+
+  "breadcrumb": {
+    "home": "Home",
+    "why": "Why Corning?"
+  },
+
+
+
+
+
+  "slider": {
+    "transportation": "Transportation",
+    "culture": "Culture",
+    "dining": "Dining",
+    "education": "Education",
+    "leisure": "Leisure",
+    "living": "Living",
+    "sandt": "Science and Technology"
+  },
+
+
+
+
+
+  "qr_modal": {
+    "title": "Share on WeChat",
+    "step": "Step 1",
+    "step-2": "Step 2",
+    "step_explainer": "Use your mobile phone to scan this QR code",
+    "step_explainer_mobile": "Copy the following URL",
+    "step2_explainer_mobile": "Paste the link in WeChat",
+    "notify": "(WeChat must be already installed)"
+  },
+
+
+
+
+  "social": {
+    "share-message": "Behind the glass | Corning’s Innovation is happening in Hefei, search for hot jobs",
+    "share-message-wechat": "Corning’s Innovation is happening in Hefei, search for hot jobs"
+  },
+
+
+
+
+
+  "hefei": "Hefei"
+}

@@ -1,0 +1,330 @@
+.container__header.container__header--slick{
+  padding: 0;
+}
+
+.container-nav--slick{
+  position: relative;
+  z-index: 9999;
+}
+
+.row-container--slick{
+  position: absolute;
+  top: 0;
+}
+
+.col-fixed--slick{
+  position: absolute;
+  top: 1.2em;
+}
+
+.slick-slider{
+  margin-bottom: 0;
+  overflow: hidden;
+  @media only screen and (max-width : 480px) {
+    overflow: visible;
+  }
+}
+
+.slider-nav{
+  background: #F3F3F3;
+  &:hover{
+    cursor: pointer;
+  }
+  &:focus{
+    outline: none;
+  }
+  & p{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: #666666;
+    padding: 0 0.5em;
+    margin: 0.5em 0;
+    @media only screen and (max-width : 1295px) {
+      font-size: 14px;
+    }
+    @media only screen and (max-width : 1134px) {
+      font-size: 13px;
+    }
+    @media only screen and (max-width : 1057px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.slick-slide--nav{
+  border-right: 1px solid #979797;
+  &:hover{
+    background: #E8E8E8;
+    color: $white-base
+  }
+  &:last-child{
+    border-right: 0;
+  }
+}
+
+.slick-slide--image{
+  min-height: 480px;
+  @media only screen and (max-width : 480px) {
+    min-height: 120px;
+  }
+}
+
+.slider-nav > .slick-prev,
+.slider-nav > .slick-next{
+  background: none;
+  height: auto;
+  margin: 0.5em 0;
+  &:before{
+    color: $blue-base;
+  }
+  &:before:hover{
+    color: $blue-base;
+  }
+}
+
+.slider-nav > .slick-prev{
+  position: absolute;
+  left: 5%;
+}
+
+.slider-nav > .slick-next{
+  position: absolute;
+  right: 5%;
+}
+
+.slick-prev,
+.slick-next{
+  @include transition-duration(0.3s);
+  background: rgba(243, 243, 243, 0.5);
+  z-index: 9999;
+  height: 125px;
+  width: 55px;
+  &:hover{
+    background: rgba(243, 243, 243, 1);
+  }
+}
+
+.slick-prev{
+  &:before{
+    content:"\e079";
+    font-family: $font-icon-base;
+    color: rgba(0,0,0,0.5);
+    @media only screen and (max-width : 480px) {
+      font-size: 15px;
+    }
+  }
+  &:hover:before{
+    color: $black-base;
+  }
+  left: -55px;
+  transform: translate(0%,-50%);
+  @media only screen and (max-width : 480px) {
+    height: 45px;
+    width: 45px;
+    transform: translate(0%, -30%) !important;
+  }
+  @media only screen and (max-width : 768px) {
+    left: 0;
+    transform: translate(0%, -50%);
+  }
+}
+
+.slick-next{
+  &:before{
+    content:"\e080";
+    font-family: $font-icon-base;
+    color: rgba(0,0,0,0.5);
+    @media only screen and (max-width : 480px) {
+      font-size: 15px;
+    }
+  }
+  &:hover:before{
+    color: $black-base;
+  }
+  right: -55px;
+  transform: translate(0%,-50%);
+  @media only screen and (max-width : 480px) {
+    height: 45px;
+    width: 45px;
+    transform: translate(0%, -30%) !important;
+  }
+  @media only screen and (max-width : 768px) {
+    right: 0;
+    transform: translate(0%, -50%);
+  }
+}
+
+.slick-slide--living{
+  @include full-width-image('images/carousel/living-desktop.jpg');
+  @media only screen and (max-width : 480px) {
+    @include full-width-image('images/carousel/living-mobile.jpg');
+  }
+  @media only screen and (max-width : 768px) {
+    @include full-width-image('images/carousel/living-tablet.jpg');
+  }
+}
+
+.slick-slide--leisure{
+  @include full-width-image('images/carousel/leisure-desktop.jpg');
+  @media only screen and (max-width : 480px) {
+    @include full-width-image('images/carousel/leisure-mobile.jpg');
+  }
+  @media only screen and (max-width : 768px) {
+    @include full-width-image('images/carousel/leisure-tablet.jpg');
+  }
+}
+
+.slick-slide--dining{
+  @include full-width-image('images/carousel/dining-desktop.jpg');
+  @media only screen and (max-width : 480px) {
+    @include full-width-image('images/carousel/dining-mobile.jpg');
+  }
+  @media only screen and (max-width : 768px) {
+    @include full-width-image('images/carousel/dining-tablet.jpg');
+  }
+}
+
+.slick-slide--education{
+  @include full-width-image('images/carousel/education-desktop.jpg');
+  @media only screen and (max-width : 480px) {
+    @include full-width-image('images/carousel/education-mobile.jpg');
+  }
+  @media only screen and (max-width : 768px) {
+    @include full-width-image('images/carousel/education-tablet.jpg');
+  }
+}
+
+.slick-slide--science{
+  @include full-width-image('images/carousel/technology-desktop.jpg');
+  @media only screen and (max-width : 480px) {
+    @include full-width-image('images/carousel/technology-mobile.jpg');
+  }
+  @media only screen and (max-width : 768px) {
+    @include full-width-image('images/carousel/technology-tablet.jpg');
+  }
+}
+
+.slick-slide--transport{
+  @include full-width-image('images/carousel/transport-desktop.jpg');
+  @media only screen and (max-width : 480px) {
+    @include full-width-image('images/carousel/transport-mobile.jpg');
+  }
+  @media only screen and (max-width : 768px) {
+    @include full-width-image('images/carousel/transport-tablet.jpg');
+  }
+}
+
+.slick-slide--culture{
+  @include full-width-image('images/carousel/culture-desktop.jpg');
+  @media only screen and (max-width : 480px) {
+    @include full-width-image('images/carousel/culture-mobile.jpg');
+  }
+  @media only screen and (max-width : 768px) {
+    @include full-width-image('images/carousel/culture-tablet.jpg');
+  }
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.slide-content{
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:0.7s;
+  -moz-animation-duration:0.7s;
+  animation-duration:0.7s;
+
+  padding-bottom: 3em;
+  & h2{
+    font-size: 26px;
+    font-weight: bold;
+  }
+  & p{
+    font-size: 18px;
+    line-height: 30px;
+  }
+  & img{
+    margin-bottom: 1em;
+  }
+  @media only screen and (max-width : 480px) {
+    margin: 2em 0;
+  }
+}
+
+.slick-dots{
+  position: absolute;
+  bottom: 15px;
+  @media only screen and (max-width : 480px) {
+    bottom: -45px;
+  }
+}
+
+.slick-dots li button:before{
+  @include transition-duration(0.3s);
+  color: #D8D8D8;
+  font-size: 15px;
+  opacity: 0.7;
+}
+
+.slick-dots li.slick-active button:before{
+  color: $blue-base;
+  opacity: 1;
+}
+
+.slick-slider:hover > .slick-next{
+  right: 0;
+  margin-bottom: 0;
+}
+
+.slick-slider:hover > .slick-prev{
+  left: 0;
+  margin-bottom: 0;
+}
+
+.slide-content p{
+  @media only screen and (max-width : 480px) {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.slide-content h2{
+  @media only screen and (max-width : 480px) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.slide-content-culture,
+.slide-content-dining,
+.slide-content-education,
+.slide-content-leisure,
+.slide-content-living,
+.slide-content-sandt{
+  display: none;
+}
+
+.slick-slide.slick-slide--nav .slick-active{
+  background: $blue-base;
+  & p{
+    color: $white-base;
+  }
+}
+
+.slide__button--active {
+  border-top: 8px solid $blue-base;
+
+  p {
+    color: $blue-base;
+    margin-bottom: 0;
+  }
+}

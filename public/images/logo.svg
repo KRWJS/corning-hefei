@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="92px" height="92px" viewBox="0 0 92 92" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="92" height="92"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="92" height="92" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <linearGradient x1="20.1652152%" y1="6.57269022%" x2="31.454918%" y2="80.6852921%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" stop-opacity="0.8" offset="0%"></stop>
+            <stop stop-color="#D8D8D8" stop-opacity="0.164515399" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="01.1-Introduction-Q1" transform="translate(-140.000000, -20.000000)">
+            <g id="Group" transform="translate(140.000000, 20.000000)">
+                <use id="Rectangle-4" stroke="#FFFFFF" mask="url(#mask-2)" stroke-width="2" xlink:href="#path-1"></use>
+                <text id="CORNING" font-family="AGaramondPro-Regular, Adobe Garamond Pro" font-size="14" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="12.991" y="50">CORNING</tspan>
+                </text>
+                <path d="M26.4514604,92 C26.4514604,92 51.1992188,46 62,0.60509445 C62,0.60509445 1,0 1,0 L1,91.436265" id="Path-3" fill="url(#linearGradient-3)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

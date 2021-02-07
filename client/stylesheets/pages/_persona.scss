@@ -1,0 +1,127 @@
+//
+// Persona
+// --------------------------------------------------
+
+.col-persona{
+  margin-bottom: 3em;
+}
+
+.col-persona__inner-block{
+  @include box-shadow(0px, 2px, 4px, #E4E4E4, $inset: false);
+  border: 1px solid #E4E4E4;
+  float: left;
+  display: block;
+  position: relative;
+  min-height: 370px;
+  width: 100%;
+  @media only screen and (max-width : 480px) {
+    min-height: 305px;
+  }
+  @media only screen and (max-width : 768px) {
+    min-height: 315px;
+  }
+  & p{
+    font-size: 20px;
+    color: $blue-base;
+    font-weight: bold;
+    margin: 0.7em;
+    line-height: 28px;
+    @media only screen and (max-width : 480px) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+    @media only screen and (max-width : 768px) {
+      line-height: 24px;
+    }
+  }
+  & a{
+    float: left;
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+}
+
+.img-hover--wrap{
+  overflow: hidden;
+}
+
+.img-hover--scale{
+  -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+  -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  &:hover{
+    -webkit-transform: scale3d(1.1, 1.1, 1);
+      transform: scale3d(1.1, 1.1, 1);
+  }
+}
+
+.persona{
+  padding-bottom: 3em;
+  @media only screen and (max-width : 480px) {
+    margin-top: -1px;
+  }
+}
+
+.persona__slogan{
+  & h1{
+    color: #4A4A4A;
+    font-size: 30px;
+    line-height: 1.2;
+    font-style: normal;
+    font-weight: bold;
+
+    @media only screen and (max-width: 480px) {
+      font-size: 20px;
+    }
+  }
+}
+
+.persona__bio{
+  & p{
+    color: #4A4A4A;
+    font-size: 18px;
+    margin: 1em 0 1.5em;
+    line-height: 30px;
+    @media only screen and (max-width : 480px) {
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  @media only screen and (max-width : 480px) {
+    padding-bottom: 2em;
+  }
+}
+
+.persona__image{
+  & img{
+    margin-bottom: 1em;
+    width: 100%;
+  }
+}
+
+.col-persona{
+  @media only screen and (max-width : 767px) {
+    width: 50%;
+  }
+  @media only screen and (max-width : 480px) {
+    width: 100%;
+  }
+}
+
+.col-persona__text{
+  margin-bottom: 4em;
+  @media only screen and (max-width : 480px) {
+    margin-bottom: 0;
+  }
+  @media only screen and (max-width : 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.container-why--tablet{
+  @media only screen and (max-width : 768px) {
+    margin-bottom: 3em;
+  }
+}

@@ -1,0 +1,110 @@
+//
+// Introduction
+// --------------------------------------------------
+
+
+
+.container--question {
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  margin-left: 0;
+  margin-right: 0;
+  height: 100%;
+  z-index: 2;
+  padding-bottom: 5em;
+  transform: translateZ(0);
+}
+
+.container--question__background {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container--question__background--building {
+  background-image: url('/images/intro-building.jpg');
+  background-size: cover;
+  @media only screen and (max-width : 480px) {
+    background-image: url('/images/intro-building-mobile.jpg');
+    background-size: cover;
+  }
+}
+
+.container--question__background--door {
+  background: url('/images/Intro_frontdoorfar_dooropen_logo_desktop.jpg') no-repeat center bottom;
+  background-size: cover;
+  @media only screen and (max-width : 480px) {
+    background-image: url('/images/Intro_frontdoorfar_dooropen_logo_desktop.jpg');
+    background-size: cover;
+  }
+}
+
+%container__content--common {
+  z-index: 3;
+  position: relative;
+}
+
+.container__intro-text,
+.container__content {
+  @extend %container__content--common;
+  justify-content: space-between;
+}
+
+.container__content--no-justify{
+  @extend %container__content--common;
+  height: auto;
+}
+
+.door-left-background{
+  opacity: 0;
+  z-index: 2;
+  background: url('/images/leftdoor.png') no-repeat center bottom;
+  background-size: cover;
+  @media only screen and (max-width : 480px) {
+    background: url('/images/leftdoor.png') no-repeat center bottom;
+    background-size: cover;
+  }
+}
+
+.door-right-background{
+  opacity: 0;
+  z-index: 2;
+  background: url('/images/rightdoor.png') no-repeat center bottom;
+  background-size: cover;
+  @media only screen and (max-width : 480px) {
+    background: url('/images/rightdoor.png') no-repeat center bottom;
+    background-size: cover;
+  }
+}
+
+.nologo-background{
+  opacity: 0;
+  z-index: 1;
+  background: url('/images/Intro_frontdoorfar_dooropen_nologo_desktop.jpg') no-repeat center bottom;
+  background-size: cover;
+
+  @media only screen and (max-width : 480px) {
+    background: url('/images/Intro_frontdoorfar_dooropen_nologo_desktop.jpg ') no-repeat center bottom;
+    background-size: cover;
+
+  }
+}
+
+.waterfall-background{
+  z-index: 1;
+  background: url('/images/waterfall.jpg') no-repeat center bottom;
+  background-size: cover;
+}
+
+.answers-wrapper--padding{
+  & .btn{
+    width: 100%;
+  }
+}

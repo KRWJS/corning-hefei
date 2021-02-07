@@ -1,0 +1,68 @@
+<template name="App_Vacancies_index">
+
+    <div class="container-fluid no-padding container-fluid--tab spacer-margin-top fade-in">
+
+
+        <!-- Start vacancy intro copy container -->
+        <div class="container container-vacancy-intro">
+
+
+          <!-- Start vacancy intro copy row -->
+          <div class="row">
+
+
+            <!-- Start vacancy intro copy col-md-12 -->
+            <div class="col-md-12">
+
+
+              <p>{{_ 'vacancyIntro.p1'}}</p>
+              <p>{{_ 'vacancyIntro.p2'}}</p>
+
+
+            </div><!-- //Vacancy intro copy col-md-12 -->
+
+
+          </div><!-- //Vacancy intro copy row -->
+
+
+        </div><!-- //Vacancy intro copy container -->
+
+
+        <!-- Start tab panes -->
+        <div class="container container__content--no-justify tab-content fade-in">
+
+            <div role="tabpanel" class="tab-pane active" id="vacancies">
+
+                {{> filter categories=categories experiences=experiences updateFilters=updateFilters}}
+
+                <!-- Start vacancies row 1 -->
+                <div class="container--vacancy-cards">
+
+                    {{#each vacancy in vacancies}}
+                        <div class="col-xs-12 col-md-4 col-sm-6 vacancy-card">
+                            {{> App_Vacancies_card vacancy=vacancy}}
+                        </div>
+                    {{/each}}
+
+                </div><!-- //Vacancies row 1 -->
+
+
+            </div>
+
+        </div><!-- //Tab panes -->
+
+        {{#if moreResults}}
+            {{> spinner}}
+        {{/if}}
+    </div>
+
+
+
+</template>
+
+<template name="App_Vacancies_card">
+    <a href="{{pathFor 'vacancies.show' _id=vacancy._id}}" title="Click for more details" role="button"
+       class="btn btn-vacancy js-vacancy-card">{{vacancy.title}}
+        <br/><span>{{experienceLabel vacancy}}</span>
+        <br/><span>{{_ 'hefei'}}</span></a>
+</template>

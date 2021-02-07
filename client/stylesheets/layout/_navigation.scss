@@ -1,0 +1,150 @@
+//
+// Navigation
+// --------------------------------------------------
+
+.white-text{
+  margin: 7em 0;
+}
+.navbar{
+  margin-bottom: 0;
+  padding: 1.2em 0;
+}
+
+.nav > li > a{
+  @include transition-duration(0.3s);
+  color: $white-base;
+  font-size: 18px;
+  line-height: 92px;
+  padding: 0 2em;
+  @media only screen and (max-width : 894px) {
+    padding: 0 0.9em;
+  }
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus{
+  background-color: transparent;
+  opacity: 0.7;
+}
+
+.nav > li> a.navbar-brand{
+  padding: 0 1em;
+  @media only screen and (max-width : 894px) {
+    padding: 0 0.5em;
+  }
+}
+
+a.contact-link{
+  color: $white-base;
+  padding: 0 1.5em 0 0;
+  font-size: 15px;
+  border-right: 1px solid $white-base;
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+.multi-site{
+  margin: 0;
+  & a:hover{
+    color: $white-base;
+  }
+  & li:nth-child(1){
+    padding: 0;
+  }
+  & li:nth-child(2){
+    padding-left: 1.5em;
+    @media only screen and (max-width : 767px) {
+      padding-left: 5px;
+      padding-right: 0;
+    }
+  }
+}
+
+.multi-site__link {
+  display: block;
+  border: 1px solid transparent;
+  padding: 0.3em;
+  width: 2em;
+  text-align: center;
+  color: $grey-base;
+}
+
+a.multi-site--selected{
+  color: $white-base;
+  border: 1px solid $white-base;
+  padding: 0.3em;
+}
+
+.brand__logo-link {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.brand__logo {
+  display: block;
+  height: auto;
+  width: auto;
+}
+
+ul.list-inline--xs{
+  margin: 1em 0;
+  float: left;
+  width: 100%;
+}
+
+li.nav-item--xs{
+  width: 33.3%;
+  padding: 0;
+  float: left;
+  text-align: center;
+  font-size: 18px;
+  & a{
+    color: #717070;
+    @media only screen and (max-width : 480px) {
+      font-size: 16px;
+    }
+    @media only screen and (max-width : 320px) {
+      font-size: 13px;
+    }
+  }
+}
+
+li.nav-item--xs > .active{
+  color: $blue-base;
+  &:before{
+    content:"\e252";
+    position: absolute;
+    font-family: $font-icon-base;
+    top: 46%;
+    right: 78%;
+    color: $blue-base;
+  }
+}
+
+.navbar--xs{
+  @media only screen and (max-width : 480px) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.navbar-brand--xs{
+  padding: 1em 0;
+}
+
+.container-nav--hover{
+  @include transition-duration(0.7s);
+  &:hover{
+    background: $blue-base;
+  }
+}
+
+.container-nav--hover--living{
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+}

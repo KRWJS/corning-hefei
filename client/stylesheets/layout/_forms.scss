@@ -1,0 +1,23 @@
+//
+// Forms
+// --------------------------------------------------
+
+label.vacancy-filter{
+  color: $grey-darker;
+  font-size: $font-size-base;
+  font-weight: bold;
+}
+
+select.form-control--vacancy-filter{
+  @include border-radius(0);
+  @include appearance (none);
+  box-shadow: none;
+  font-size: 16px;
+  color: $grey-darker;
+  height: 48px;
+  cursor: pointer;
+}
+
+select.form-control--vacancy-filter::-ms-expand{
+  display: none; 
+}

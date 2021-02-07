@@ -1,0 +1,113 @@
+//
+// Nav Tabs
+// --------------------------------------------------
+
+
+
+.tab-content{
+  padding-bottom: 5em;
+}
+
+.nav-tabs-breadcrumb.nav-justified{
+  padding: 0.6em 0;
+}
+
+.nav-tabs-breadcrumb.nav-justified li{
+  @media only screen and (max-width : 767px) {
+    width: 33.3%;
+    float: left;
+  }
+}
+
+.nav-tabs-breadcrumb.nav-justified>li>a{
+  color: $grey-dark;
+  font-size: 22px;
+  @media only screen and (max-width : 767px) {
+    font-size: $font-size-small;
+    padding: 0;
+    text-align: center !important;
+  }
+  @media only screen and (max-width : 480px) {
+    font-size: 15px;
+  }
+  &:hover{
+    color: $grey-base;
+  }
+}
+
+.nav-tabs-breadcrumb.nav-justified>li.active>a{
+  color: $blue-light;
+  font-weight: bold;
+  &:hover{
+    color: $blue-light;
+    cursor: pointer;
+  }
+}
+
+.nav-tabs-breadcrumb.nav-justified>li>a,
+.nav-tabs-breadcrumb.nav-justified>.active>a,
+.nav-tabs-breadcrumb.nav-justified>.active>a:focus,
+.nav-tabs-breadcrumb.nav-justified>.active>a:hover{
+  border: 0;
+  background: none;
+}
+
+.nav-tabs-breadcrumb.nav-justified>.active>a{
+  &:before{
+    content:"\e252";
+    position: absolute;
+    font-family: $font-icon-base;
+    top: -41%;
+    right: 20%;
+    color: $blue-base;
+    @media only screen and (max-width : 1199px) {
+      right: 23%;
+    }
+    @media only screen and (max-width : 991px) {
+      right: 28%;
+    }
+    @media only screen and (max-width : 767px) {
+      top: -75%;
+      right: 45%;
+    }
+  }
+}
+
+.nav-tabs-breadcrumb.nav-justified>.active>a.nav-tabs-breadcrumb__second-item{
+  &:before{
+    right: 47%;
+    @media only screen and (max-width : 991px) {
+      right: 45%;
+    }
+    @media only screen and (max-width : 767px) {
+      top: -75%;
+      right: 45%;
+    }
+  }
+}
+
+.nav-tabs-breadcrumb.nav-justified>.active>a.nav-tabs-breadcrumb__third-item{
+  &:before{
+    right: 82%;
+    @media only screen and (max-width : 1199px) {
+      right: 78%;
+    }
+    @media only screen and (max-width : 991px) {
+      right: 71%;
+    }
+    @media only screen and (max-width : 767px) {
+      top: -75%;
+      right: 45%;
+    }
+  }
+}
+
+.container-fluid--tab{
+  background: $white-base;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  margin-left: 0;
+  margin-right: 0;
+  z-index: 1;
+  position: relative;
+}

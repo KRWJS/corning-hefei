@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+//Vendor
+
+
+//Abstracts
+@import "abstracts/mixins";               // Sass Mixins
+@import "abstracts/variables";            // Sass Variables
+@import "abstracts/shame";                // Shame :(
+
+//Base
+@import "base/base";                      // Base
+@import "base/typography";                // Typography
+
+//Utilities
+@import "utilities/spacing";              // Spacing
+
+//Components
+@import "components/buttons";             // Buttons
+@import "components/accordion";           // Accordion
+@import "components/lists";               // Lists
+@import "components/nav-tabs";            // Nav Tabs
+@import "components/pagination";          // Pagination
+@import "components/filter";              // Vacancy Filter
+@import "components/carousel";            // Carousel
+@import "components/modal";               // Modal
+@import "components/spinners";            // Spinners
+
+//Layout
+@import "layout/navigation";              // Navigation
+@import "layout/header";                  // Header
+@import "layout/footer";                  // Footer
+@import "layout/body";                    // Body
+@import "layout/forms";                   // Forms
+@import "layout/breadcrumb";              // Breadcrumb
+@import "layout/background";
+@import "layout/responsive";              // Responsive (NOT USED Template File)
+
+//Pages
+@import "pages/introduction";             // Intro
+@import "pages/persona";                  // Persona
+@import "pages/vacancies-detail";         // Vacancies Detail
+@import "pages/questions";                // Questions
+@import "pages/authentication";           // Authentication

@@ -1,0 +1,56 @@
+//
+// Breadcrumb
+// --------------------------------------------------
+
+.breadcrumb{
+  background: none;
+  padding: 1em 0;
+  @media only screen and (max-width : 480px) {
+    margin-bottom: 0;
+  }
+  @media only screen and (max-width : 768px) {
+    margin-bottom: 0;
+  }
+  & a{
+    color: $grey-dark;
+    font-size: 14px;
+  }
+  & a:hover{
+    text-decoration: underline;
+  }
+}
+
+.breadcrumb > .active{
+  color: $grey-dark;
+}
+
+.breadcrumb > li + li:before{
+  font-family: $font-icon-base;
+  content:"\e080";
+  color: #717070;
+  font-size: 10px;
+}
+
+.breadcrumb-vacancies-detail{
+  background: none;
+  padding: 0;
+  margin: 1em 0;
+  & a{
+    color: $grey-dark;
+  }
+  & a:hover{
+    text-decoration: underline;
+  }
+}
+
+.breadcrumb-vacancies-detail > li + li:before{
+  color: $grey-dark;
+  content:">";
+}
+
+.col-vacancies-detail{
+  & h1{
+    color: $black-base;
+    margin: 0.5em 0;
+  }
+}

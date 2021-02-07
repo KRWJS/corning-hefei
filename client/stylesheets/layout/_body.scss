@@ -1,0 +1,67 @@
+//
+// Body
+// --------------------------------------------------
+
+.container{
+  @media only screen and (max-width : 992px) {
+    width: 100%;
+  }
+}
+
+.vcenter{
+  @include vcenter();
+}
+
+.no-margin{
+  margin: 0;
+}
+
+.no-padding{
+  padding: 0;
+}
+
+.no-padding-mobile{
+  @media only screen and (max-width : 480px) {
+    padding: 0;
+  }
+}
+
+.no-padding-tablet{
+  @media only screen and (max-width : 991px) {
+    padding: 0;
+  }
+}
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:0.7s;
+  -moz-animation-duration:0.7s;
+  animation-duration:0.7s;
+
+}
+
+.container--vacancy-cards {
+  display: flex;
+  flex-wrap: wrap;
+
+  // adjusting margins for the responsive columns from Bootstrap
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.vacancy-card {
+  margin-top: 1.5em;
+  display: flex;
+}

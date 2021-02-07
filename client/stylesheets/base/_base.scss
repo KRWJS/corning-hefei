@@ -1,0 +1,104 @@
+//
+// Base
+// --------------------------------------------------
+
+
+
+
+
+/**
+  Body
+
+  These are the styles for the website body
+  They are the generic styles used throughout the website
+  They should include there relevant responsive states **/
+
+html {
+  height: 100%;
+}
+
+body{
+  background: $white-base;
+  font-family: $font-family-base;
+  text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background: $blue-lighter;
+}
+::-moz-selection {
+  background: $blue-lighter;
+}
+:focus{
+    outline: none !important;
+}
+a,
+a:hover,
+a:active,
+a:focus{
+  outline: 0;
+  text-decoration: none;
+}
+
+a{
+  @include transition-duration(0.3s);
+  cursor: pointer;
+}
+
+strong{
+  font-weight: bold;
+}
+
+.text-right{
+  text-align: right !important;
+}
+
+.text-left{
+  text-align: left !important;
+}
+
+.spacer-margin-top{
+  margin-top: 3em;
+  @media only screen and (max-width : 768px) {
+    margin-top: 1em;
+  }
+}
+
+.spacer-margin-bottom{
+  margin-bottom: 1em !important;
+  @media only screen and (max-width : 768px) {
+    margin-bottom: 1em;
+  }
+}
+
+.spacer-margin-slick{
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.spacer-margin{
+  margin-top: 3em;
+  margin-bottom: 3em;
+  & h1{
+    margin: 1em 0;
+  }
+  @media only screen and (max-width : 768px) {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+.spacer-margin-top-mobile{
+  @media only screen and (max-width : 768px) {
+    margin-top: 1em;
+  }
+}
+
+.add-padding-tablet{
+  @media only screen and (max-width : 768px) {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}

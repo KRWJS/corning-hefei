@@ -1,0 +1,133 @@
+//
+// Vacancies Detail
+// --------------------------------------------------
+
+i.fa.fa-weixin{
+  color: #3CBC20;
+}
+
+i.fa.fa-weibo{
+  color: #E13B30;
+}
+
+i.fa.fa-linkedin{
+  color: #005293;
+}
+
+i.fa.fa-envelope{
+  color: #717070;
+}
+
+.vacancies-link{
+  color: $blue-base;
+  text-decoration: underline;
+  font-weight: bold;
+  &:hover{
+    color: #1E1E1E;
+    text-decoration: underline;
+    opacity: 0.5;
+  }
+}
+
+.col-vacancies-detail{
+  & h1{
+    @media only screen and (max-width : 767px) {
+      padding: 0.5em 0 0;
+    }
+  }
+}
+
+.dl-horizontal__vacancies-detail{
+  font-size: 18px;
+  @media only screen and (max-width : 767px) {
+    font-size: 16px;
+  }
+  & dt{
+    text-align: left;
+    line-height: 40px;
+    @media only screen and (max-width : 767px) {
+      width: 45%;
+      float: left;
+    }
+    @media only screen and (max-width : 320px) {
+      line-height: 30px;
+    }
+  }
+  & dd{
+    line-height: 40px;
+    @media only screen and (max-width : 320px) {
+      line-height: 30px;
+    }
+  }
+  & p{
+    font-size: 18px;
+    line-height: 40px;
+    @media only screen and (max-width : 767px) {
+      font-size: 16px;
+      float: left;
+      margin-top: -1em;
+    }
+    @media only screen and (max-width : 320px) {
+      line-height: 30px;
+    }
+  }
+}
+
+.dl-horizontal__vacancies-detail ul{
+  @media only screen and (max-width : 320px) {
+    padding-left: 1.5em;
+  }
+}
+
+.vacancies-detail__responsibility{
+  padding: 0;
+  line-height: 26px;
+  & li{
+    margin: 1em;
+  }
+}
+
+.vacancies-detail__responsibility--list-title{
+  list-style: none;
+  margin: 3em 0 1em !important;
+}
+
+.social-media-invite{
+  padding: 1em 0;
+  margin: 1em 0;
+  & h4{
+    font-weight: normal;
+    line-height: 17px;
+  }
+  @media only screen and (max-width : 991px) {
+    text-align: center;
+    margin-bottom: 4em;
+  }
+}
+
+.list-inline__social-media-invite{
+  margin-top: 1.5em;
+  & a{
+    font-size: 30px;
+    color: $blue-base;
+  }
+  & a:hover{
+    opacity: 0.8;
+  }
+}
+
+.tooltip{
+  @media only screen and (max-width : 767px) {
+    margin-left: 4em !important;
+  }
+  & a{
+    color: $white-base;
+    font-size: 18px;
+  }
+}
+
+.tooltip-arrow{
+  @media only screen and (max-width : 767px) {
+    left: 15% !important;
+  }
+}

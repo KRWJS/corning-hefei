@@ -1,0 +1,23 @@
+<template name="Questions_layout">
+    <!-- Start container intro with building background image -->
+    <div class="container-fluid container--question js-question-container">
+
+        <!-- Start container intro text -->
+        <div class="container js-container__intro-text">
+
+
+            <!-- Start intro text row -->
+            <div class="row">
+
+                <!-- Start col-md-10 with centered text. Use the .lead__intro-text class on all app text that can be found on top of the full viewport background image -->
+                {{> Template.dynamic template=question}}
+
+            </div><!-- //Intro text row -->
+
+        </div><!-- //Container intro text -->
+
+    </div><!-- //Container intro with building background image -->
+
+    {{> Template.dynamic template=background}}
+
+</template>

@@ -1,0 +1,25 @@
+//
+// Questions
+// --------------------------------------------------
+
+
+
+
+
+.js-answers-wrapper{
+  @media only screen and (max-width : 480px) {
+    margin: 2em 0;
+  }
+}
+
+.js-answers-wrapper .btn-hefei{
+  @media only screen and (max-width : 480px) {
+    min-width: 47%;
+  }
+}
+
+a.btn.btn-block.btn-block-hefei.btn-hefei.js-experience{
+  @media only screen and (max-width : 480px) {
+    width: 100%;
+  }
+}

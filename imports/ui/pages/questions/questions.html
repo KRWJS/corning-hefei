@@ -1,0 +1,300 @@
+<Template name="Questions_1">
+    <div class="col-md-8">
+        <div class="js-questions-wrapper" style="display: none;">
+            <p class="lead lead__intro-text">{{{_ 'q1.intro_1'}}}</p>
+            <p class="lead lead__intro-text">{{_ 'q1.intro_2'}}</p>
+        </div>
+        <div class="js-answers-wrapper spacer-margin" style="display: none;">
+            <a href="{{pathFor 'questions.get' questionId='2_1'}}" role="button" class="btn btn-hefei btn-margin" title="Click to answer yes">{{_ 'q1.yes'}}</a>
+
+            <a href="{{pathFor 'questions.get' questionId='2_2'}}" role="button" class="btn btn-hefei" title="Click to answer no">{{_ 'q1.no'}}</a>
+        </div>
+    </div><!-- //Col-md-10 -->
+
+</Template>
+
+<Template name="Background_1">
+    <div class="container--question__background container--question__background--building js-primary-background" style="opacity: 1; z-index: 1;"></div>
+</Template>
+
+
+
+
+
+<Template name="Questions_2_1">
+    <div class="col-md-8">
+        <p class="lead lead__intro-text lead__intro-text--questions_2_1 fade-in">{{_ 'q2_1.q1' (_ (getDeviceMessage 'q2_1'))}}</p>
+        <div class="js-answers-wrapper spacer-margin fade-in">
+          <a href="{{pathFor 'questions.get' questionId='3'}}" role="button" class="btn btn-hefei" title="Click to answer yes">{{_ 'q2_1.yes'}}</a>
+        </div>
+    </div>
+
+</Template>
+
+<Template name="Background_2_1">
+    <div class="container--question__background container--question__background--building js-primary-background" style="opacity: 1; z-index: 1;"></div>
+</Template>
+
+
+
+
+
+<Template name="Questions_2_2">
+    <div class="col-md-8">
+        <p class="lead lead__intro-text fade-in">{{_ 'q2_2.q1' (_ (getDeviceMessage 'q2_1'))}}</p>
+        <div class="js-answers-wrapper spacer-margin fade-in">
+          <a href="{{pathFor 'questions.get' questionId='3'}}" role="button" class="btn btn-hefei" title="Click to answer yes">{{_ 'q2_2.yes'}}</a>
+        </div>
+    </div>
+</Template>
+
+<Template name="Background_2_2">
+    <div class="container--question__background container--question__background--building js-primary-background" style="opacity: 1; z-index: 1;"></div>
+</Template>
+
+
+
+
+
+<Template name="Questions_3">
+    <div class="col-md-8">
+        <p class="lead lead__intro-text fade-in">{{_ 'q3.q1'}}</p>
+        <p class="lead lead__intro-text fade-in">{{_ 'q3.q2'}}</p>
+
+        <div class="js-answers-wrapper spacer-margin fade-in">
+          <a href="{{pathFor 'questions.get' questionId='4_1'}}" role="button" class="btn btn-hefei btn-margin js-heard-of-hefei" title="Click to answer yes" data-answer="yes">{{_ 'q3.yes'}}</a>
+
+          <a href="{{pathFor 'questions.get' questionId='4_2'}}" role="button" class="btn btn-hefei js-heard-of-hefei" title="Click to answer no" data-answer="no">{{_ 'q3.no'}}</a>
+        </div>
+    </div>
+
+</Template>
+
+<Template name="Background_3">
+    <div class="container--question__background container--question__background--building js-primary-background" style="opacity: 1; z-index: 1;"></div>
+</Template>
+
+
+
+
+
+<Template name="Questions_4_1">
+    <div class="col-md-8">
+        <p class="lead lead__intro-text fade-in">{{_ 'q4_1.q1'}}</p>
+
+        <div class="js-answers-wrapper spacer-margin fade-in">
+
+          <a href="{{pathFor 'questions.get' questionId='4_1_1'}}" role="button" class="btn btn-hefei btn-margin js-born-in-hefei" title="Click to answer yes" data-answer="yes">{{_ 'q4_1.yes'}}</a>
+
+          <a href="{{pathFor 'questions.get' questionId='4_1_2'}}" role="button" class="btn btn-hefei js-born-in-hefei" title="Click to answer no" data-answer="no">{{_ 'q4_1.no'}}</a>
+
+        </div>
+    </div>
+</Template>
+
+<Template name="Background_4_1">
+    <div class="container--question__background container--question__background--building js-primary-background" style="opacity: 1; z-index: 1;"></div>
+</Template>
+
+
+
+
+
+<Template name="Questions_4_1_1">
+    <div class="col-md-8">
+        <p class="lead lead__intro-text fade-in">{{_ 'q4_1_1.q1'}}</p>
+        <div class="js-answers-wrapper spacer-margin fade-in">
+
+          <a href="{{pathFor 'questions.get' questionId='4_1_1_1'}}" role="button" class="btn btn-hefei btn-margin js-living-in-hefei" title="Click to answer yes" data-answer="yes">{{_ 'q4_1_1.yes'}}</a>
+
+          <a href="{{pathFor 'questions.get' questionId='4_1_1_2'}}" role="button" class="btn btn-hefei js-living-in-hefei" title="Click to answer no" data-answer="no">{{_ 'q4_1_1.no'}}</a>
+
+        </div>
+    </div>
+</Template>
+
+<Template name="Background_4_1_1">
+    <div class="container--question__background container--question__background--building js-primary-background" style="opacity: 1; z-index: 1;"></div>
+</Template>
+
+
+
+
+
+<Template name="Questions_4_1_1_1">
+    <div class="col-md-8">
+        <p class="lead lead__intro-text fade-in">{{_ 'q4_1_1_1.q1'}}</p>
+        <p class="lead lead__intro-text fade-in">{{_ 'q4_1_1_1.q2'}}</p>
+        <div class="js-answers-wrapper spacer-margin fade-in">
+          <a href="{{pathFor 'questions.get' questionId='5'}}" role="button" class="btn btn-hefei" title="Click to learn more">{{_ 'q4_1_1_1.yes'}}</a>
+        </div>
+    </div>
+</Template>
+
+
+<Template name="Background_4_1_1_1">
+    <div class="container--question__background container--question__background--building js-primary-background" style="opacity: 1; z-index: 1;"></div>
+</Template>
+
+
+
+
+
+<Template name="Questions_4_1_1_2">
+    <div class="col-md-8">
+        <p class="lead lead__intro-text fade-in">{{_ 'q4_1_1_2.q1'}}</p>
+        <p class="lead lead__intro-text fade-in">{{_ 'q4_1_1_2.q2'}}</p>
+        <div class="js-answers-wrapper spacer-margin fade-in">
+            <a href="{{pathFor 'questions.get' questionId='5'}}" role="button" class="btn btn-hefei" title="Click to learn more">{{_ 'q4_1_1_2.yes'}}</a>
+        </div>
+    </div>
+</Template>
+
+
+<Template name="Background_4_1_1_2">
+    <div class="container--question__background container--question__background--building js-primary-background" style="opacity: 1; z-index: 1;"></div>
+</Template>
+
+
+
+
+
+<Template name="Questions_4_1_2">
+    <div class="col-md-8">
+        <p class="lead lead__intro-text fade-in">{{_ 'q4_1_2.q1'}}</p>
+        <p class="lead lead__intro-text fade-in">{{_ 'q4_1_2.q2'}}</p>
+
+        <div class="js-answers-wrapper spacer-margin fade-in">
+
+          <a href="{{pathFor 'questions.get' questionId='5'}}" role="button" class="btn btn-hefei" title="Click to learn more">{{_ 'q4_1_2.yes'}}</a>
+
+        </div>
+    </div>
+</Template>
+
+<Template name="Background_4_1_2">
+    <div class="container--question__background container--question__background--building js-primary-background" style="opacity: 1; z-index: 1;"></div>
+</Template>
+
+
+
+
+<Template name="Questions_4_2">
+    <div class="col-md-8">
+        <p class="lead lead__intro-text fade-in">{{_ 'q4_2.q1'}}</p>
+        <p class="lead lead__intro-text fade-in">{{_ 'q4_2.q2'}}</p>
+        <div class="js-answers-wrapper spacer-margin fade-in">
+
+          <a href="{{pathFor 'questions.get' questionId='5'}}" role="button" class="btn btn-hefei" title="Click to learn more">{{_ 'q4_2.yes'}}</a>
+
+        </div>
+    </div>
+</Template>
+
+<Template name="Background_4_2">
+    <div class="container--question__background container--question__background--building js-primary-background" style="opacity: 1; z-index: 1;"></div>
+</Template>
+
+
+
+
+<Template name="Questions_5">
+    <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 text-center question-col--mobile">
+        <div class="js-questions-wrapper" style="display: none;">
+            <p class="lead lead__intro-text">{{{_ 'q5.q1'}}}</p>
+            <p class="lead lead__intro-text">{{_ 'q5.q2'}}</p>
+            <!-- {{#if _ 'q5.q3'}}
+                <p class="lead lead__intro-text">{{_ 'q5.q3'}}</p>
+            {{/if}} -->
+        </div>
+        <div class="js-answers-wrapper spacer-margin" style="display: none;">
+            <a href="{{pathFor 'questions.get' questionId='6'}}" role="button" class="btn btn-hefei" title="Click to answer yes">{{_ 'q5.yes'}}</a>
+        </div>
+    </div>
+
+</Template>
+
+<Template name="Background_5">
+
+    <div class="container--question__background container--question__background--building js-primary-background" style="opacity: 1; z-index: 1;"></div>
+
+    <div class="background-container js-background-container">
+
+      <div class="container--question__background container--question__background--door js-secondary-background" style="opacity: 0; z-index: 1;"></div>
+
+      <div class="container--question__background js-nologo-background nologo-background" style="opacity: 0;"></div>
+
+      <div class="container--question__background js-door-left-background door-left-background"></div>
+
+      <div class="container--question__background js-door-right-background door-right-background"></div>
+
+    </div>
+
+</Template>
+
+
+
+
+<Template name="Questions_6">
+    <div class="col-md-3 col-xs-1"></div>
+    <div class="col-md-4 col-md-offset-1 col-sm-8 col-sm-offset-1 col-xs-10 js-answers-wrapper spacer-margin" style="display: none;">
+      <div class="js-questions-wrapper questions-wrapper--margin text-center" style="display: none;">
+          <p class="lead lead__intro-text lead__intro-text--lg spacer-margin-bottom">{{{_ 'q6.q1'}}}</p>
+      </div>
+        <a href="{{pathFor 'questions.get' questionId='7'}}" role="button" class="btn btn-block btn-block-hefei btn-hefei js-experience" title="Click if you are still a graduate" data-answer="graduate">{{_ 'q6.graduate'}}</a>
+        <a href="{{pathFor 'questions.get' questionId='7'}}" role="button" class="btn btn-block btn-block-hefei btn-hefei js-experience" title="Click if you have 1-4 years' experience" data-answer="1-4">{{_ 'q6.junior'}}</a>
+        <a href="{{pathFor 'questions.get' questionId='7'}}" role="button" class="btn btn-block btn-block-hefei btn-hefei js-experience" title="Click if you have more than 4 years experience" data-answer=">4">{{_ 'q6.senior'}}</a>
+    </div>
+    <div class="col-md-3 col-xs-1"></div>
+</Template>
+
+
+<Template name="Background_6">
+    <div class="background-container">
+        <div class="container--question__background js-nologo-background nologo-background"></div>
+        <div class="container--question__background js-door-left-background door-left-background" style="opacity: 1; z-index: 2;"></div>
+        <div class="container--question__background js-door-right-background door-right-background" style="opacity: 1; z-index: 2;"></div>
+    </div>
+</Template>
+
+
+
+
+
+<Template name="Questions_7">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3 text-center">
+        <div class="js-questions-wrapper" style="display: none;">
+            <p class="lead lead__intro-text lead__intro-text--lg">{{{_ questionText}}}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row js-answers-wrapper spacer-margin no-padding-mobile" style="display: none;">
+
+      <div class="col-md-4">
+        <a href="#" role="button" class="btn btn-block btn-block-hefei btn-hefei js-expertise" title="Click if you are an engineering expert" data-answer="engineering">{{_ 'q7.engineering'}}</a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" role="button" class="btn btn-block btn-block-hefei btn-hefei js-expertise" title="Click if you are an IT expert" data-answer="it">{{_ 'q7.it'}}</a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" role="button" class="btn btn-block btn-block-hefei btn-hefei js-expertise" title="Click if you are a logistics expert" data-answer="scm">{{_ 'q7.scm'}}</a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" role="button" class="btn btn-block btn-block-hefei btn-hefei js-expertise" title="Click if you are an manufacturing expert" data-answer="manufacturing">{{_ 'q7.manufacturing'}}</a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" role="button" class="btn btn-block btn-block-hefei btn-hefei js-expertise" title="Click if you are an admin expert" data-answer="admin">{{_ 'q7.admin'}}</a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" role="button" class="btn btn-block btn-block-hefei btn-hefei js-expertise" title="Click if you are a finance expert" data-answer="finance">{{_ 'q7.finance'}}</a>
+      </div>
+
+    </div>
+
+</Template>
+
+<Template name="Background_7">
+    <div class="container--question__background waterfall-background js-waterfall-background" style="z-index: 1;"></div>
+</Template>

@@ -1,0 +1,174 @@
+<template name="App_Vacancies_detail">
+
+  <div class="container-fluid no-padding add-padding-tablet container-fluid--tab">
+
+    <!-- Start tab panes -->
+    <div class="container tab-content spacer-margin container__content--no-justify">
+
+      <div role="tabpanel" class="tab-pane active" id="vacancies">
+
+          {{#if subsReady}}
+        <!-- Start vacancies row 1 -->
+        <div class="row">
+
+          <div class="col-md-9 col-vacancies-detail">
+
+            <ol class="breadcrumb breadcrumb-vacancies-detail hidden-xs">
+                <li><a href="{{pathFor 'vacancies.index'}}">Vacancies</a></li>
+                <li class="active">{{vacancy.title}}</li>
+            </ol>
+
+            <h1>{{vacancy.title}}</h1>
+
+            <dl class="dl-horizontal dl-horizontal__vacancies-detail">
+
+                <dt>Location</dt>
+                <dd>{{_ 'hefei'}}</dd>
+
+                <dt>Experience</dt>
+                <dd>{{experienceLevel vacancy}}</dd>
+
+                <dt>Field of Expertise</dt>
+                <dd>{{_ (translationKey 'vacancyCategories' vacancy.fieldOfExpertise)}}</dd>
+
+
+                {{#if vacancy.purpose}}
+                    <dt>Job Description</dt>
+                    <dd class="spacer-margin-top-mobile">
+                        {{{vacancy.purpose}}}
+                    </dd>
+                {{/if}}
+
+                <dt class="hidden-xs">Responsibility</dt>
+                <dd class="spacer-margin-top-mobile">
+                    {{#if vacancy.responsibility}}
+                        <strong>Day to Day Responsibilities</strong>
+                        {{{vacancy.responsibility}}}
+                    {{/if}}
+
+                    {{#if vacancy.educationAndExperience}}
+                        <strong>Education</strong>
+                        {{{vacancy.educationAndExperience}}}
+                    {{/if}}
+
+                    {{#if vacancy.requiredSkills}}
+                        <strong>Required Skills</strong>
+                        {{{vacancy.requiredSkills}}}
+                    {{/if}}
+
+                    {{#if vacancy.desiredSkills}}
+                        <strong>Desired Skills</strong>
+                        {{{vacancy.desiredSkills}}}
+                    {{/if}}
+
+                    {{#if vacancy.softSkills}}
+                        <strong>Soft Skills</strong>
+                        {{{vacancy.softSkills}}}
+                    {{/if}}
+                </dd>
+
+            </dl>
+
+        </div>
+
+        <div class="col-md-3 no-padding-mobile no-padding-tablet">
+
+            <a href="{{applyUrl}}" role="button" class="btn btn-hefei btn-hefei--apply js-vacancy-apply" target="_blank">{{_ 'button.apply'}}</a>
+
+            <div class="social-media-invite">
+                <h4><strong>{{_ 'inviteFriends.title'}}</strong></h4>
+                <h4>{{_ 'inviteFriends.subTitle'}}</h4>
+                <ul class="list-inline list-inline__social-media-invite">
+                  <li>
+
+                    <button type="button" class="btn btn-invite--wechat" data-toggle="modal" data-target="#weChatModal">
+                      <i class="fa fa-weixin" aria-hidden="true"></i>
+                    </button>
+
+                  </li>
+                  <li>
+                    <a href="#"
+                       onclick="return shareToWeibo('{{vacancyUrl}}', '{{socialSharingTitle}}')"><i
+                            class="fa fa-weibo" aria-hidden="true"></i></a>
+                  </li>
+                  <li>
+                    <a href="#" onclick="return shareToLinkedin('{{vacancyUrl}}', '{{socialSharingTitle}}')"><i
+                            class="fa fa-linkedin" aria-hidden="true"></i></a>
+                  </li>
+                {{#if displayEmail}}
+                  <li>
+                    <a href="{{emailUrl}}"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                  </li>
+                {{/if}}
+                </ul>
+            </div>
+
+          </div>
+
+        </div><!-- //Vacancies row 1 -->
+
+          {{else}}
+              {{> spinner}}
+          {{/if}}
+      </div>
+
+              </div><!-- //Tab panes -->
+
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="weChatModal" tabindex="-1" role="dialog" aria-labelledby="weChatLabel">
+    <div class="modal-dialog" role="document">
+
+
+      <div class="modal-content hidden-xs">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="weChatLabel">{{_ 'qr_modal.title'}}</h4>
+          <h5>{{_ 'qr_modal.step'}}</h5>
+          <p>{{_ 'qr_modal.step_explainer'}}</p>
+        </div>
+        <div class="modal-body">
+          <center>
+            {{{qrCode}}}
+            <p>{{_ 'qr_modal.notify'}}</p>
+          </center>
+        </div>
+      </div>
+
+
+      <div class="modal-content visible-xs">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="weChatLabel">{{_ 'qr_modal.title'}}</h4>
+          <h5>{{_ 'qr_modal.step'}}</h5>
+          <p>{{_ 'qr_modal.step_explainer_mobile'}}</p>
+
+          <!-- Target -->
+          <div class="display-inline">
+
+            <input id="weChatLink" class="input--copy" value="{{vacancyUrl}}">
+
+            <!-- Trigger -->
+            <button class="btn--copy" data-clipboard-target="#weChatLink">
+              <i class="fa fa-files-o" aria-hidden="true"></i>
+            </button>
+
+          </div>
+
+          <h5>{{_ 'qr_modal.step-2'}}</h5>
+          <p>{{_ 'qr_modal.step2_explainer_mobile'}}</p>
+        </div>
+        <div class="modal-body">
+          <center>
+            <a href="weixin://" role="button" class="btn btn-hefei btn-hefei--apply">{{_ 'button.weChat'}}</a>
+            <p class="spacer-margin">{{_ 'qr_modal.notify'}}</p>
+          </center>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+</template>

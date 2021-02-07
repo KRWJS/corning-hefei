@@ -1,0 +1,79 @@
+//
+// Header
+// --------------------------------------------------
+
+.container__header{
+  padding: 1.2em;
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  z-index: 3;
+  padding-top: 0;
+}
+
+.container__header--xs{
+  z-index: 3;
+  position: relative;
+}
+
+.row-xs--blue{
+  background: $blue-base;
+}
+
+.row-xs--white{
+  @include box-shadow(0px, 2px, 4px, #E4E4E4, $inset: false);
+  background: $white-base;
+}
+
+.container__header--glass{
+  background-image: url('/images/why-corning-header.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.container-sticky{
+  position: fixed;
+  width: 100%;
+  transition: all 0.7s ease;
+  z-index: 999999;
+}
+.container-sticky.sticky {
+  height: 48px;
+  background: $blue-base;
+}
+
+.sticky nav.navbar{
+  padding-top: 0;
+}
+
+.navbar-brand--sticky img{
+  display: none;
+}
+
+.sticky .navbar-brand--sticky img{
+  display: block;
+  width: 92px;
+}
+
+.sticky .navbar-brand img,
+.sticky .nav > li > a.navbar-brand{
+  display: none;
+}
+
+a.navbar-brand--sticky{
+  width: 128px;
+}
+
+.nav > li > a.navbar-brand--sticky{
+  padding: 1em;
+}
+
+.sticky .nav > li > a,
+.sticky a.contact-link{
+  line-height: 47px;
+}
+
+.container-sticky-height{
+  height: 127px;
+}

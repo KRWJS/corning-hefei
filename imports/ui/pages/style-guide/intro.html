@@ -1,0 +1,56 @@
+<template name="intro-page">
+
+  <!-- Start container intro with building background image -->
+  <div class="container-fluid container-fluid__intro-building vcenter">
+
+    <!-- Start container intro text -->
+    <div class="container container__intro-text">
+
+
+      <!-- Start intro text row -->
+      <div class="row">
+
+        <!-- Start empty col -->
+        <div class="col-md-1"></div><!-- //Empty col -->
+
+        <!-- Start col-md-10 with centered text. Use the .lead__intro-text class on all app text that can be found on top of the full viewport background image -->
+        <div class="col-md-10 text-center">
+
+          <p class="lead lead__intro-text">Hi!</p>
+          <p class="lead lead__intro-text">We are Corning and you’re about to discover an exciting world <strong>behind the glass</strong>.</p>
+          <p class="lead lead__intro-text">Before we start, have you ever heard of us?</p>
+
+        </div><!-- //Col-md-10 -->
+
+        <!-- Start empty col -->
+        <div class="col-md-1"></div><!-- //Empty col -->
+
+      </div><!-- //Intro text row -->
+
+
+      <!-- Start intro button clickthrough row -->
+      <div class="row spacer-margin">
+
+        <!-- Start empty col -->
+        <div class="col-md-3"></div><!-- //Empty col -->
+
+        <!-- Start col-md-6 with centered buttons -->
+        <div class="col-md-6 text-center">
+
+          <a href="{{pathFor 'style.intro-door'}}" role="button" class="btn btn-hefei btn-hefei--intro" title="Click to answer yes">Yes</a>
+
+          <a href="{{pathFor 'style.intro-door'}}" role="button" class="btn btn-hefei btn-hefei--intro" title="Click to answer no">No</a>
+
+        </div><!-- //Col-md-6 with centered buttons -->
+
+        <!-- Start empty col -->
+        <div class="col-md-3"></div><!-- //Empty col -->
+
+      </div><!-- //Intro button clickthrough row -->
+
+
+    </div><!-- //Container intro text -->
+
+  </div><!-- //Container intro with building background image -->
+
+</template>
